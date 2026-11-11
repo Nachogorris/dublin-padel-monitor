@@ -921,12 +921,18 @@ elif view_mode == "🎾 Court-by-Court Visual Bar Chart":
         default_d = date.today()
         if DB_PATH.exists():
             with sqlite3.connect(DB_PATH) as conn:
-                row = conn.execute("SELECT MAX(target_date) FROM court_slot_ledger").fetchone()
-                if row and row[0]:
-                    try:
-                        default_d = date.fromisoformat(row[0])
-                    except Exception:
-                        pass
+                valid_dates = [r[0] for r in conn.execute(
+                    "SELECT target_date FROM court_slot_ledger GROUP BY target_date HAVING COUNT(*) > 50 ORDER BY target_date ASC"
+                ).fetchall()]
+                if valid_dates:
+                    today_str = date.today().isoformat()
+                    tomorrow_str = (date.today() + timedelta(days=1)).isoformat()
+                    if tomorrow_str in valid_dates:
+                        default_d = date.fromisoformat(tomorrow_str)
+                    elif today_str in valid_dates:
+                        default_d = date.fromisoformat(today_str)
+                    else:
+                        default_d = date.fromisoformat(valid_dates[0])
         selected_date = st.date_input("Fecha", value=default_d)
 
     # Available snapshots for this club & date

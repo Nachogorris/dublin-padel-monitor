@@ -462,11 +462,16 @@ class PadelDatabase:
 
                 p_val = getattr(obs, "price_eur", None)
 
+                is_event = (
+                    getattr(obs, "status_detail", "") == "blocked_coaching_or_event"
+                    or getattr(obs, "availability_status", "") == "blocked"
+                )
+
                 if existing is None:
                     if is_future:
                         status = "booked" if is_booked else "available"
                         first_det = obs.observed_at if is_booked else None
-                        lh = lead_h if is_booked else None
+                        lh = (lead_h if (is_booked and not is_event) else None)
                     else:
                         status = "unbooked_passed"
                         first_det = None
@@ -511,6 +516,7 @@ class PadelDatabase:
                     if is_future:
                         if is_booked:
                             if cur_status != "booked":
+                                assigned_lh = (lead_h if not is_event else None)
                                 conn.execute(
                                     """
                                     UPDATE court_slot_ledger SET
@@ -523,7 +529,7 @@ class PadelDatabase:
                                         updated_at = ?
                                     WHERE slot_id = ?
                                     """,
-                                    (obs.observed_at, lead_h, p_val, obs.observed_at, seen_cnt, now_ts, slot_id),
+                                    (obs.observed_at, assigned_lh, p_val, obs.observed_at, seen_cnt, now_ts, slot_id),
                                 )
                                 stats["new_bookings"] += 1
                             else:

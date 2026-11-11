@@ -9,6 +9,8 @@ ENV/
 logs/*.log
 output/*.xlsx
 output/*.csv
+*.db-shm
+*.db-wal
 data/raw/headless_snapshots/*.html
 data/raw/non_api_telemetry/*.html
 .DS_Store

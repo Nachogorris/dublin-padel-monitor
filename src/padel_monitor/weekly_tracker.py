@@ -407,8 +407,13 @@ def compute_snapshot_progression_curve(
         filtered = [
             o
             for o in observations
-            if o.snapshot_bucket in allowed_buckets
-            or (o.snapshot_bucket == "ad_hoc" and o.lead_time_hours >= min_lead_for_adhoc)
+            if (
+                getattr(o, "status_detail", "") != "blocked_coaching_or_event"
+                and o.availability_status != "blocked"
+            ) and (
+                o.snapshot_bucket in allowed_buckets
+                or (o.snapshot_bucket == "ad_hoc" and o.lead_time_hours >= min_lead_for_adhoc)
+            )
         ]
         # Require at least one full-day calendar observation (not just a single event card) at this stage
         has_calendar_obs = any(

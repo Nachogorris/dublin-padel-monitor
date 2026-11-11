@@ -29,3 +29,4 @@ RUN mkdir -p /app/data_seed && cp data/dublin_padel.db /app/data_seed/dublin_pad
 EXPOSE 8501
 
 CMD ["python", "entrypoint.py"]
+

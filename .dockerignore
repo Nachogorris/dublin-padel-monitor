@@ -9,3 +9,4 @@ venv/
 output/*.xlsx
 output/*.csv
 data/raw/headless_snapshots/
+

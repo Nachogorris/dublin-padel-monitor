@@ -10,5 +10,7 @@ logs/*.log
 output/*.xlsx
 output/*.csv
 data/raw/headless_snapshots/*.html
+data/raw/non_api_telemetry/*.html
 .DS_Store
 Thumbs.db
+

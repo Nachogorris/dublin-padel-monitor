@@ -412,8 +412,8 @@ def compute_snapshot_progression_curve(
         ]
         # Require at least one full-day calendar observation (not just a single event card) at this stage
         has_calendar_obs = any(
-            o.booking_platform in ("browser_dropzone", "csv_import", "playtomic_official_api")
-            or o.data_origin == "synthetic_validation"
+            o.booking_platform in ("browser_dropzone", "csv_import", "playtomic_official_api", "playtomic")
+            or o.data_origin in ("synthetic_validation", "live_public")
             for o in filtered
         )
         if not filtered or not has_calendar_obs:

@@ -10,3 +10,4 @@ services:
       name: padel-data
       mountPath: /app/data
       sizeGB: 1
+

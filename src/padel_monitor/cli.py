@@ -1067,6 +1067,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     p_wave = sub.add_parser("snapshot-wave", help="Execute an immediate automated snapshot collection wave across all Dublin clubs")
     p_wave.add_argument("--bucket", default=None, help="Snapshot lead-time bucket (24h, 6h, 1h, ad_hoc)")
     p_wave.add_argument("--date", default=None, help="Target ISO date for snapshot (e.g. 2026-11-10)")
+    p_wave.add_argument("--days", type=int, default=7, help="Number of days to scrape ahead (default: 7)")
     p_wave.add_argument("--week-start", default="2026-11-09", help="Target week Monday ISO date")
     p_wave.add_argument("--skip-network", action="store_true", help="Skip live HTTP network harvest (offline/inbox-only mode)")
 
@@ -1244,6 +1245,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             target_week_start=w_start,
             bucket_label=args.bucket,
             skip_network=args.skip_network,
+            days_ahead=getattr(args, "days", 7),
         )
         return 0
 

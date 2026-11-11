@@ -67,15 +67,21 @@ def execute_snapshot_wave(
     target_week_start: Optional[date] = None,
     bucket_label: Optional[str] = None,
     skip_network: bool = False,
+    days_ahead: int = 7,
 ) -> dict[str, Any]:
-    """Execute a complete, unattended snapshot collection wave across registered Playtomic clubs."""
+    """Execute a complete, unattended snapshot collection wave across registered Playtomic clubs over a multi-day span."""
     db = PadelDatabase(db_path)
     started_at = now_dublin_iso()
     bucket = bucket_label or determine_current_snapshot_bucket()
     week_start = target_week_start or (date.today() - timedelta(days=date.today().weekday()))
-    snap_date = target_date or ((date.today() + timedelta(days=1)) if bucket in ("24h", "night") else date.today())
+    base_date = target_date or date.today()
+    dates_to_scrape = [base_date + timedelta(days=i) for i in range(max(1, days_ahead))]
 
-    print(f"\n[{started_at}] 🚀 STARTING AUTOMATED PLAYTOMIC SNAPSHOT WAVE (Bucket: {bucket}, Date: {snap_date})", flush=True)
+    print(
+        f"\n[{started_at}] 🚀 STARTING AUTOMATED PLAYTOMIC SNAPSHOT WAVE "
+        f"({len(dates_to_scrape)} days ahead: {dates_to_scrape[0]} -> {dates_to_scrape[-1]}, Default Bucket: {bucket})",
+        flush=True,
+    )
 
     # 1. Harvest live public pages across registered Playtomic clubs
     harvest_rc = 0
@@ -110,25 +116,25 @@ def execute_snapshot_wave(
                 url = c_info["public_booking_url"]
                 c_courts = [c for (cl_id, _), c in courts_map.items() if cl_id == cid and c.sport.upper() == "PADEL"]
                 c_oh = {dow: ohr for (cl_id, dow), ohr in oh_map.items() if cl_id == cid}
-                print(f"    [{idx}/{len(pt_clubs)}] 🎾 Scraping live slots & prices for {cid}...", flush=True)
-                res = scraper.scrape_club_date(
+                print(f"    [{idx}/{len(pt_clubs)}] 🎾 Scraping live slots & prices for {cid} ({len(dates_to_scrape)} days: {dates_to_scrape[0]} to {dates_to_scrape[-1]})...", flush=True)
+                res = scraper.scrape_club_dates(
                     club_id=cid,
                     booking_url=url,
-                    target_date=snap_date,
+                    target_dates=dates_to_scrape,
                     courts=c_courts,
                     opening_hours=c_oh,
-                    snapshot_bucket=bucket,
+                    snapshot_bucket=bucket_label,
                 )
                 if res.observations:
                     db.record_collection_run(res)
                     ins, _ = db.insert_observations(res.observations)
                     headless_inserted += ins
                     db.update_court_slot_ledger(res.observations)
-                    print(f"       ✓ {len(res.observations)} slots captured (price extracted, ledger updated).", flush=True)
+                    print(f"       ✓ {len(res.observations)} slots captured ({len(dates_to_scrape)} days, prices extracted, ledger updated).", flush=True)
                 else:
                     print(f"       ⚠ No observations returned ({res.run_status}: {res.error_message}).", flush=True)
             print(
-                f"  ✓ Headless browser court scraper: +{headless_inserted} live court observations across {len(pt_clubs)} Playtomic clubs (Target Date: {snap_date}).",
+                f"  ✓ Headless browser court scraper: +{headless_inserted} live court observations across {len(pt_clubs)} Playtomic clubs (Span: {dates_to_scrape[0]} to {dates_to_scrape[-1]}).",
                 flush=True,
             )
         except Exception as exc:

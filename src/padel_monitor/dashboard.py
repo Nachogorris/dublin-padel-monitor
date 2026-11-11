@@ -1151,14 +1151,23 @@ elif view_mode == "⚙️ Automated Snapshots & Logs":
             index=0,
         )
         target_snap_date = st.date_input(
-            "📅 Fecha de las Pistas a Capturar:", 
+            "📅 Fecha Inicial a Capturar:", 
             value=date.today(), 
             key="snap_target_date_picker",
-            help="Puedes capturar el día de hoy, el de mañana, o cualquier fecha abierta en Playtomic."
+            help="Fecha base a partir de la cual se capturará el calendario."
         )
+        snap_span_mode = st.radio(
+            "Ventana Temporal:",
+            ["📅 Semana Completa (7 días vista)", "🎯 Solo 1 Día"],
+            index=0,
+            horizontal=True,
+        )
+        days_to_span = 7 if "Semana Completa" in snap_span_mode else 1
+
         if st.button("🚀 Run Snapshot Wave Now", type="primary"):
-            with st.spinner(f"Ejecutando captura en vivo ({scope}) para {target_snap_date}... Por favor espera."):
+            with st.spinner(f"Ejecutando captura en vivo ({scope}, {days_to_span} días desde {target_snap_date})... Por favor espera."):
                 if "Solo House of Padel" in scope:
+                    from datetime import timedelta
                     from padel_monitor.adapters.headless_court_scraper import HeadlessCourtAvailabilityScraper
                     from padel_monitor.cli import _load_db_courts_and_hours
                     from padel_monitor.db import PadelDatabase
@@ -1170,20 +1179,21 @@ elif view_mode == "⚙️ Automated Snapshots & Logs":
                     url = "https://playtomic.com/clubs/house-of-padel"
                     c_courts = [c for (cl_id, _), c in courts_map.items() if cl_id == cid and c.sport.upper() == "PADEL"]
                     c_oh = {dow: ohr for (cl_id, dow), ohr in oh_map.items() if cl_id == cid}
-                    res = scraper.scrape_club_date(
+                    target_dates_list = [target_snap_date + timedelta(days=i) for i in range(days_to_span)]
+                    res = scraper.scrape_club_dates(
                         club_id=cid,
                         booking_url=url,
-                        target_date=target_snap_date,
+                        target_dates=target_dates_list,
                         courts=c_courts,
                         opening_hours=c_oh,
-                        snapshot_bucket="1h",
+                        snapshot_bucket=None,
                     )
                     if res.observations:
                         db.record_collection_run(res)
                         db.insert_observations(res.observations)
                         db.update_court_slot_ledger(res.observations)
                     st.cache_data.clear()
-                    st.success(f"✅ Snapshot completado para House of Padel ({target_snap_date}): +{len(res.observations)} observaciones guardadas en el Libro Mayor.")
+                    st.success(f"✅ Snapshot completado para House of Padel ({days_to_span} días): +{len(res.observations)} observaciones guardadas en el Libro Mayor.")
                 else:
                     from padel_monitor.automation_runner import execute_snapshot_wave
 
@@ -1192,9 +1202,10 @@ elif view_mode == "⚙️ Automated Snapshots & Logs":
                         output_dir=OUTPUT_DIR,
                         data_dir=DATA_DIR,
                         target_date=target_snap_date,
+                        days_ahead=days_to_span,
                     )
                     st.cache_data.clear()
-                    st.success(f"✅ Snapshot completado para todos los clubes Playtomic ({target_snap_date}). ¡Base de datos y cronogramas actualizados!")
+                    st.success(f"✅ Snapshot completado para todos los clubes Playtomic ({days_to_span} días desde {target_snap_date}). ¡Base de datos y cronogramas actualizados!")
                 st.rerun()
 
     with col_btn2:

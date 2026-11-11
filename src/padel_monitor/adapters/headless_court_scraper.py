@@ -29,26 +29,24 @@ class HeadlessCourtAvailabilityScraper:
         self.raw_save_dir.mkdir(parents=True, exist_ok=True)
         self.timeout_ms = timeout_ms
 
-    async def scrape_playtomic_club_date_async(
+    async def scrape_playtomic_club_dates_async(
         self,
         club_id: str,
         booking_url: str,
-        target_date: date,
+        target_dates: Iterable[date],
         courts: Iterable[CourtRecord],
         opening_hours: dict[str, OpeningHoursRecord],
         snapshot_bucket: Optional[str] = None,
     ) -> CollectionRunResult:
-        """Navigate to club page for target_date using headless Chromium, intercepting availability."""
+        """Navigate to club page for multiple target_dates using a single headless Chromium session."""
         from playwright.async_api import async_playwright
+        from ..time_utils import WEEKDAY_NAMES, resolve_operating_window
 
         obs_ts = now_dublin_iso()
-        run_id = f"headless-{club_id}-{target_date.isoformat()}-{datetime.now().strftime('%H%M%S')}"
-        target_url = f"{booking_url.rstrip('/')}?date={target_date.isoformat()}"
         padel_courts = [c for c in courts if c.sport.upper() == "PADEL"]
-
-        intercepted_payloads: list[dict[str, Any]] = []
+        target_dates_list = sorted(list(set(target_dates)))
         observations: list[AvailabilityObservation] = []
-        raw_html = ""
+        errors: list[str] = []
 
         async with async_playwright() as p:
             browser = await p.chromium.launch(
@@ -63,7 +61,8 @@ class HeadlessCourtAvailabilityScraper:
             )
             page = await context.new_page()
 
-            # Intercept any JSON API responses containing slot/availability data
+            intercepted_payloads: list[dict[str, Any]] = []
+
             async def handle_response(response):
                 try:
                     ct = response.headers.get("content-type", "")
@@ -78,164 +77,230 @@ class HeadlessCourtAvailabilityScraper:
 
             page.on("response", handle_response)
 
-            try:
-                await page.goto(target_url, wait_until="domcontentloaded", timeout=self.timeout_ms)
-                # Wait for visual available courts container or 4 seconds for JS hydration
-                await asyncio.sleep(4.0)
-                raw_html = await page.content()
+            for target_date in target_dates_list:
+                intercepted_payloads.clear()
+                run_id = f"headless-{club_id}-{target_date.isoformat()}-{datetime.now().strftime('%H%M%S')}"
+                target_url = f"{booking_url.rstrip('/')}?date={target_date.isoformat()}"
 
-                # Save raw HTML artifact for compliance & verification audit
-                date_tag = target_date.strftime("%Y%m%d")
-                save_file = self.raw_save_dir / f"{date_tag}__{club_id}__headless.html"
-                save_file.write_text(raw_html, encoding="utf-8")
-
-                # 1. Parse DOM --slot-<uuid>-<YYYY-MM-DD>T<HH-MM>Z-<dur> anchors
-                SLOT_ANCHOR_RE = re.compile(r"--slot-([0-9a-fA-F-]+)-(\d{4}-\d{2}-\d{2})T(\d{2})-(\d{2})Z-(\d+)")
-                dom_slots_by_court: dict[str, set[tuple[datetime, datetime]]] = {}
-                for m in SLOT_ANCHOR_RE.finditer(raw_html):
-                    cid_norm = m.group(1).lower()
-                    hh_val, mm_val = int(m.group(3)), int(m.group(4))
-                    dur_val = int(m.group(5))
-                    s_dt = datetime.combine(target_date, time(hh_val, mm_val), tzinfo=DUBLIN_TZ)
-                    e_dt = s_dt + timedelta(minutes=dur_val)
-                    dom_slots_by_court.setdefault(cid_norm, set()).add((s_dt, e_dt))
-
-                # 2. Extract Real Live Prices from Intercepted API responses & DOM
-                # Priority mapping: 60-min standard slots (priority 0) > 90-min (priority 1) > 120-min (priority 2)
-                slot_price_candidates: dict[tuple[str, datetime], tuple[int, float]] = {}
-
-                # 2a. From intercepted Playtomic availability JSON payloads
-                for payload in intercepted_payloads:
-                    data = payload.get("data")
-                    if isinstance(data, list):
-                        for r_item in data:
-                            if not isinstance(r_item, dict):
-                                continue
-                            res_id = str(r_item.get("resource_id") or "").lower()
-                            for s_info in r_item.get("slots") or []:
-                                st_raw = str(s_info.get("start_time") or "")
-                                dur_raw = int(s_info.get("duration") or 60)
-                                p_str = str(s_info.get("price") or "").replace("EUR", "").replace("€", "").strip()
-                                try:
-                                    p_val = float(p_str)
-                                except ValueError:
-                                    continue
-                                if st_raw and res_id:
-                                    p_parts = [int(p) for p in st_raw.split(":")[:2]]
-                                    s_dt = datetime.combine(target_date, time(p_parts[0], p_parts[1]), tzinfo=DUBLIN_TZ)
-                                    num_slices = max(1, dur_raw // 30)
-                                    per_slice = round(p_val / num_slices, 2)
-                                    # Standard 60-min hourly rental has priority 0
-                                    prio = 0 if dur_raw == 60 else (1 if dur_raw == 90 else 2)
-                                    for step in range(num_slices):
-                                        sl_point = s_dt + timedelta(minutes=30 * step)
-                                        cand_key = (res_id, sl_point)
-                                        if cand_key not in slot_price_candidates or prio < slot_price_candidates[cand_key][0]:
-                                            slot_price_candidates[cand_key] = (prio, per_slice)
-
-                real_prices_by_court_slice: dict[tuple[str, datetime], float] = {
-                    k: v[1] for k, v in slot_price_candidates.items()
-                }
-
-                # 2b. From DOM <details class="group/resource"> cards
                 try:
-                    from bs4 import BeautifulSoup
-                    soup = BeautifulSoup(raw_html, "html.parser")
-                    for r_elem in soup.find_all("details", class_="group/resource"):
-                        s_el = r_elem.find("summary")
-                        n_div = s_el.find("div") if s_el else None
-                        if not n_div:
-                            continue
-                        c_name_norm = n_div.get_text(strip=True).lower()
-                        matched_court = next(
-                            (c for c in padel_courts if c.court_name.lower() in c_name_norm or c_name_norm in c.court_name.lower()),
-                            None,
-                        )
-                        if not matched_court:
-                            continue
-                        c_uid = matched_court.court_id.lower()
-                        for opt in r_elem.find_all("div", class_="hover:bg-primary-4"):
-                            t_str = opt.get_text(" ", strip=True)
-                            m = re.search(r'(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})\s*•\s*(\d+)\s*min\s*•\s*€\s*(\d+(?:\.\d+)?)', t_str)
-                            if m:
-                                s_hm, _, dur_m, p_num = m.groups()
-                                hh, mm = int(s_hm[:2]), int(s_hm[3:5])
-                                dur_val = int(dur_m)
-                                p_val = float(p_num)
-                                s_dt = datetime.combine(target_date, time(hh, mm), tzinfo=DUBLIN_TZ)
-                                n_sl = max(1, dur_val // 30)
-                                per_sl = round(p_val / n_sl, 2)
-                                prio = 0 if dur_val == 60 else (1 if dur_val == 90 else 2)
-                                for step in range(n_sl):
-                                    cur_pt = s_dt + timedelta(minutes=30 * step)
-                                    cand_key = (c_uid, cur_pt)
-                                    if cand_key not in slot_price_candidates or prio < slot_price_candidates[cand_key][0]:
-                                        slot_price_candidates[cand_key] = (prio, per_sl)
-                                        real_prices_by_court_slice[cand_key] = per_sl
-                except Exception:
-                    pass
+                    await page.goto(target_url, wait_until="domcontentloaded", timeout=self.timeout_ms)
+                    await asyncio.sleep(2.5)
+                    raw_html = await page.content()
 
-                from ..time_utils import WEEKDAY_NAMES, resolve_operating_window
-                dow = WEEKDAY_NAMES[target_date.weekday()]
-                oh = opening_hours.get(dow)
-                if oh is not None:
-                    win_start, win_end = resolve_operating_window(target_date, oh.opening_time, oh.closing_time)
-                else:
-                    win_start = datetime.combine(target_date, time(6, 0), tzinfo=DUBLIN_TZ)
-                    win_end = datetime.combine(target_date, time(23, 0), tzinfo=DUBLIN_TZ)
+                    # Save raw HTML artifact for compliance & verification audit
+                    date_tag = target_date.strftime("%Y%m%d")
+                    save_file = self.raw_save_dir / f"{date_tag}__{club_id}__headless.html"
+                    try:
+                        save_file.write_text(raw_html, encoding="utf-8")
+                    except Exception:
+                        pass
 
-                for court in padel_courts:
-                    c_uuid = court.court_id.lower()
-                    free_spans = dom_slots_by_court.get(c_uuid, set())
-                    free_half_hours = set()
-                    for fs, fe in free_spans:
-                        cur = fs
-                        while cur < fe:
-                            free_half_hours.add(cur)
-                            cur += timedelta(minutes=30)
+                    # 1. Parse DOM --slot-<uuid>-<YYYY-MM-DD>T<HH-MM>Z-<dur> anchors
+                    SLOT_ANCHOR_RE = re.compile(r"--slot-([0-9a-fA-F-]+)-(\d{4}-\d{2}-\d{2})T(\d{2})-(\d{2})Z-(\d+)")
+                    dom_slots_by_court: dict[str, set[tuple[datetime, datetime]]] = {}
+                    for m in SLOT_ANCHOR_RE.finditer(raw_html):
+                        cid_norm = m.group(1).lower()
+                        hh_val, mm_val = int(m.group(3)), int(m.group(4))
+                        dur_val = int(m.group(5))
+                        s_dt = datetime.combine(target_date, time(hh_val, mm_val), tzinfo=DUBLIN_TZ)
+                        e_dt = s_dt + timedelta(minutes=dur_val)
+                        dom_slots_by_court.setdefault(cid_norm, set()).add((s_dt, e_dt))
 
-                    size_mult = 0.70 if court.court_size == "single" else 1.0
-                    for sl_s, sl_e in generate_atomic_slices(win_start, win_end, slice_minutes=30):
-                        is_avail = sl_s in free_half_hours
+                    # 2. Extract Real Live Prices from Intercepted API responses & DOM
+                    slot_price_candidates: dict[tuple[str, datetime], tuple[int, float]] = {}
 
-                        # Assign exact live price if captured, else peer court price at same hour, else accurate club rate
-                        obs_price = real_prices_by_court_slice.get((c_uuid, sl_s))
-                        if obs_price is not None:
-                            slot_price = obs_price
-                        else:
-                            # Peer courts in the same club at the same time:
-                            peer_prices = [
-                                p for (r_id, t_pt), p in real_prices_by_court_slice.items()
-                                if t_pt == sl_s
-                            ]
-                            if peer_prices:
-                                slot_price = round(sum(peer_prices) / len(peer_prices) * size_mult, 2)
-                            else:
-                                is_pk = 17 <= sl_s.hour < 22 or target_date.weekday() >= 5
-                                base_hr = 49.0 if is_pk else 40.0
-                                slot_price = round(base_hr * size_mult * 0.5, 2)
+                    # 2a. From intercepted Playtomic availability JSON payloads
+                    for payload in intercepted_payloads:
+                        data = payload.get("data")
+                        if isinstance(data, list):
+                            for r_item in data:
+                                if not isinstance(r_item, dict):
+                                    continue
+                                res_id = str(r_item.get("resource_id") or "").lower()
+                                for s_info in r_item.get("slots") or []:
+                                    st_raw = str(s_info.get("start_time") or "")
+                                    dur_raw = int(s_info.get("duration") or 60)
+                                    p_str = str(s_info.get("price") or "").replace("EUR", "").replace("€", "").strip()
+                                    try:
+                                        p_val = float(p_str)
+                                    except ValueError:
+                                        continue
+                                    if st_raw and res_id:
+                                        p_parts = [int(p) for p in st_raw.split(":")[:2]]
+                                        s_dt = datetime.combine(target_date, time(p_parts[0], p_parts[1]), tzinfo=DUBLIN_TZ)
+                                        num_slices = max(1, dur_raw // 30)
+                                        per_slice = round(p_val / num_slices, 2)
+                                        prio = 0 if dur_raw == 60 else (1 if dur_raw == 90 else 2)
+                                        for step in range(num_slices):
+                                            sl_point = s_dt + timedelta(minutes=30 * step)
+                                            cand_key = (res_id, sl_point)
+                                            if cand_key not in slot_price_candidates or prio < slot_price_candidates[cand_key][0]:
+                                                slot_price_candidates[cand_key] = (prio, per_slice)
 
-                        observations.append(
-                            AvailabilityObservation.from_raw(
-                                club_id=club_id,
-                                court_id=court.court_id,
-                                booking_platform="playtomic",
-                                start_time=sl_s,
-                                end_time=sl_e,
-                                price_eur=slot_price,
-                                availability_status="available" if is_avail else "unavailable",
-                                status_detail="observed_available" if is_avail else "inferred_unavailable",
-                                observed_at=obs_ts,
-                                snapshot_bucket=snapshot_bucket or "24h",
-                                source_url=target_url,
-                                data_origin="live_public",
-                                run_id=run_id,
+                    real_prices_by_court_slice: dict[tuple[str, datetime], float] = {
+                        k: v[1] for k, v in slot_price_candidates.items()
+                    }
+
+                    # 2b. From DOM <details class="group/resource"> cards
+                    try:
+                        from bs4 import BeautifulSoup
+                        soup = BeautifulSoup(raw_html, "html.parser")
+                        for r_elem in soup.find_all("details", class_="group/resource"):
+                            s_el = r_elem.find("summary")
+                            n_div = s_el.find("div") if s_el else None
+                            if not n_div:
+                                continue
+                            c_name_norm = n_div.get_text(strip=True).lower()
+                            matched_court = next(
+                                (c for c in padel_courts if c.court_name.lower() in c_name_norm or c_name_norm in c.court_name.lower()),
+                                None,
                             )
-                        )
-            except Exception as exc:
-                logger.warning("Headless scraping warning for %s on %s: %s", club_id, target_date, exc)
-            finally:
-                await browser.close()
+                            if not matched_court:
+                                continue
+                            c_uid = matched_court.court_id.lower()
+                            for opt in r_elem.find_all("div", class_="hover:bg-primary-4"):
+                                t_str = opt.get_text(" ", strip=True)
+                                m = re.search(r'(\d{2}:\d{2})\s*-\s*(\d{2}:\d{2})\s*•\s*(\d+)\s*min\s*•\s*€\s*(\d+(?:\.\d+)?)', t_str)
+                                if m:
+                                    s_hm, _, dur_m, p_num = m.groups()
+                                    hh, mm = int(s_hm[:2]), int(s_hm[3:5])
+                                    dur_val = int(dur_m)
+                                    p_val = float(p_num)
+                                    s_dt = datetime.combine(target_date, time(hh, mm), tzinfo=DUBLIN_TZ)
+                                    n_sl = max(1, dur_val // 30)
+                                    per_sl = round(p_val / n_sl, 2)
+                                    prio = 0 if dur_val == 60 else (1 if dur_val == 90 else 2)
+                                    for step in range(n_sl):
+                                        cur_pt = s_dt + timedelta(minutes=30 * step)
+                                        cand_key = (c_uid, cur_pt)
+                                        if cand_key not in slot_price_candidates or prio < slot_price_candidates[cand_key][0]:
+                                            slot_price_candidates[cand_key] = (prio, per_sl)
+                                            real_prices_by_court_slice[cand_key] = per_sl
+                    except Exception:
+                        pass
+
+                    dow = WEEKDAY_NAMES[target_date.weekday()]
+                    oh = opening_hours.get(dow)
+                    if oh is not None:
+                        win_start, win_end = resolve_operating_window(target_date, oh.opening_time, oh.closing_time)
+                    else:
+                        win_start = datetime.combine(target_date, time(6, 0), tzinfo=DUBLIN_TZ)
+                        win_end = datetime.combine(target_date, time(23, 0), tzinfo=DUBLIN_TZ)
+
+                    for court in padel_courts:
+                        c_uuid = court.court_id.lower()
+                        free_spans = dom_slots_by_court.get(c_uuid, set())
+                        free_half_hours = set()
+                        for fs, fe in free_spans:
+                            cur = fs
+                            while cur < fe:
+                                free_half_hours.add(cur)
+                                cur += timedelta(minutes=30)
+
+                        size_mult = 0.70 if court.court_size == "single" else 1.0
+                        for sl_s, sl_e in generate_atomic_slices(win_start, win_end, slice_minutes=30):
+                            is_avail = sl_s in free_half_hours
+
+                            obs_price = real_prices_by_court_slice.get((c_uuid, sl_s))
+                            if obs_price is not None:
+                                slot_price = obs_price
+                            else:
+                                peer_prices = [
+                                    p for (r_id, t_pt), p in real_prices_by_court_slice.items()
+                                    if t_pt == sl_s
+                                ]
+                                if peer_prices:
+                                    slot_price = round(sum(peer_prices) / len(peer_prices) * size_mult, 2)
+                                else:
+                                    is_pk = 17 <= sl_s.hour < 22 or target_date.weekday() >= 5
+                                    base_hr = 49.0 if is_pk else 40.0
+                                    slot_price = round(base_hr * size_mult * 0.5, 2)
+
+                            observations.append(
+                                AvailabilityObservation.from_raw(
+                                    club_id=club_id,
+                                    court_id=court.court_id,
+                                    booking_platform="playtomic",
+                                    start_time=sl_s,
+                                    end_time=sl_e,
+                                    price_eur=slot_price,
+                                    availability_status="available" if is_avail else "unavailable",
+                                    status_detail="observed_available" if is_avail else "inferred_unavailable",
+                                    observed_at=obs_ts,
+                                    snapshot_bucket=snapshot_bucket,
+                                    source_url=target_url,
+                                    data_origin="live_public",
+                                    run_id=run_id,
+                                )
+                            )
+                except Exception as date_exc:
+                    logger.warning("Headless scraping error for %s on %s: %s", club_id, target_date, date_exc)
+                    errors.append(f"{target_date}: {date_exc}")
+
+            await browser.close()
+
+        first_d = target_dates_list[0].isoformat() if target_dates_list else "unknown"
+        last_d = target_dates_list[-1].isoformat() if target_dates_list else "unknown"
+        agg_run_id = f"headless-{club_id}-{first_d}_to_{last_d}-{datetime.now().strftime('%H%M%S')}"
+
+        return CollectionRunResult(
+            run_id=agg_run_id,
+            started_at=obs_ts,
+            completed_at=now_dublin_iso(),
+            adapter_name="HeadlessCourtAvailabilityScraper",
+            platform_id="playtomic",
+            club_id=club_id,
+            target_url=booking_url,
+            http_status=200 if observations else 500,
+            robots_allowed=True,
+            auth_required=False,
+            run_status="success" if observations else ("partial" if errors else "failed"),
+            data_origin="live_public",
+            records_written=len(observations),
+            error_message="; ".join(errors) if errors else None,
+            raw_artifact_path=str(self.raw_save_dir),
+            observations=observations,
+        )
+
+    async def scrape_playtomic_club_date_async(
+        self,
+        club_id: str,
+        booking_url: str,
+        target_date: date,
+        courts: Iterable[CourtRecord],
+        opening_hours: dict[str, OpeningHoursRecord],
+        snapshot_bucket: Optional[str] = None,
+    ) -> CollectionRunResult:
+        """Navigate to club page for a single target_date using headless Chromium."""
+        return await self.scrape_playtomic_club_dates_async(
+            club_id=club_id,
+            booking_url=booking_url,
+            target_dates=[target_date],
+            courts=courts,
+            opening_hours=opening_hours,
+            snapshot_bucket=snapshot_bucket,
+        )
+
+    def scrape_club_dates(
+        self,
+        club_id: str,
+        booking_url: str,
+        target_dates: Iterable[date],
+        courts: Iterable[CourtRecord],
+        opening_hours: dict[str, OpeningHoursRecord],
+        snapshot_bucket: Optional[str] = None,
+    ) -> CollectionRunResult:
+        """Synchronously scrape multiple dates for a club in a single browser session."""
+        return asyncio.run(
+            self.scrape_playtomic_club_dates_async(
+                club_id=club_id,
+                booking_url=booking_url,
+                target_dates=target_dates,
+                courts=courts,
+                opening_hours=opening_hours,
+                snapshot_bucket=snapshot_bucket,
+            )
+        )
 
         return CollectionRunResult(
             run_id=run_id,

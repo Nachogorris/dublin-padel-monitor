@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /api
+Disallow: /wl
+Disallow: /search
+Disallow: /blog/post
+Disallow: /tournaments/*
+Disallow: /activities/*
+Disallow: /*?*q=
+Disallow: /*?*sport=
+Disallow: /*?*date=
+
+Sitemap: https://playtomic.com/sitemap.xml

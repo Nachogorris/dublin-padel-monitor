@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /wp-content/uploads/
+Disallow: /wp-admin/
+Disallow: /readme.html
+Disallow: /refer/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /*add-to-cart=*
+Disallow: /*add_to_wishlist=*
+
+Sitemap: https://dlrleisure.ie/sitemap_index.xml

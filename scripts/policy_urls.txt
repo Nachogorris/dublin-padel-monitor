@@ -1,0 +1,14 @@
+# Playtomic
+https://playtomic.com/robots.txt
+https://playtomic.io/robots.txt
+https://api.playtomic.io/robots.txt
+https://playtomic.com/clubs/house-of-padel
+https://third-party.playtomic.io/
+# Matchpoint (Padel Dome)
+https://padeldome-ie.matchpoint.com.es/robots.txt
+https://padeldome-ie.matchpoint.com.es/
+# Playbypoint (Bushy Park)
+https://bushytennispadel.playbypoint.com/robots.txt
+https://www.playbypoint.com/robots.txt
+https://www.playbypoint.com/terms
+

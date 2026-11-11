@@ -1,0 +1,21 @@
+# Non-Playtomic public club portals & robots.txt
+https://pslc.gladstonego.cloud/robots.txt
+https://pslc.gladstonego.cloud/book
+https://padel-ireland.ie/robots.txt
+https://padel-ireland.ie/bookings/
+https://dlrleisure.ie/robots.txt
+https://dlrleisure.ie/facility-booking/
+https://bushytennispadel.playbypoint.com/
+https://www.smartclubcloud.com/robots.txt
+
+# Playtomic sitemap & robots-allowed Dublin club profile pages (/clubs/<slug>)
+https://playtomic.com/sitemap.xml
+https://playtomic.com/clubs/star-padel-club
+https://playtomic.com/clubs/ob-padel
+https://playtomic.com/clubs/druid-padel-kimmage
+https://playtomic.com/clubs/druid-padel-at-coolmine
+https://playtomic.com/clubs/druid-padel-at-sportsco-members-only
+https://playtomic.com/clubs/leopardstown-golf-padel-range
+https://playtomic.com/clubs/padel-pines
+https://playtomic.com/clubs/halpenny-padel-club
+

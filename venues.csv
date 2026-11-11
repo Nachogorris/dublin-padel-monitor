@@ -1,0 +1,35 @@
+venue_id,venue,county,courts_listed,platform,public_booking_url,access_status
+padel_dome,Padel Dome / Dublin Sports Dome,Dublin,9,matchpoint,https://padeldome-ie.matchpoint.com.es/,blocked_login_or_antibot
+westwood,West Wood Club Leopardstown,Dublin,8,member_proprietary,https://westwood.ie/tennis/padel,members_only
+house_of_padel,House of Padel,Dublin,5,playtomic,https://playtomic.com/clubs/house-of-padel,live_metadata_verified_slots_need_official_api
+portmarnock,Portmarnock Padel (PSLC),Dublin,5,gladstonego,https://pslc.gladstonego.cloud/book,awaiting_operator_or_api_permission
+bushy_park,Bushy Park Tennis & Padel Club,Dublin,4,playbypoint,https://bushytennispadel.playbypoint.com/,blocked_login_or_antibot
+druid_coolmine,Druid Padel at Coolmine RFC,Dublin,4,playtomic,https://playtomic.com/clubs/druid-padel-at-coolmine,live_metadata_verified_slots_need_official_api
+halpenny,Halpenny Padel Club,Dublin,4,playtomic,https://playtomic.com/clubs/halpenny-padel-club,live_metadata_verified_slots_need_official_api
+leopardstown_golf,Leopardstown Golf Centre Padel Range,Dublin,4,playtomic,https://playtomic.com/clubs/leopardstown-golf-padel-range,live_metadata_verified_slots_need_official_api
+david_lloyd,David Lloyd Dublin Riverview,Dublin,3,member_proprietary,https://www.davidlloyd.ie/clubs/dublin-riverview/,members_only
+druid_kimmage,Druid Padel Kimmage,Dublin,3,playtomic,https://playtomic.com/clubs/druid-padel-kimmage,live_metadata_verified_slots_need_official_api
+elm_park,Elm Park Golf & Sports Club,Dublin,3,mycourts,https://www.elmpark.ie,members_only
+fitzwilliam,Fitzwilliam Lawn Tennis Club,Dublin,3,member_proprietary,https://www.fltc.ie,members_only
+ob_padel,OB Padel,Dublin,3,playtomic,https://playtomic.com/clubs/ob-padel,live_metadata_verified_slots_need_official_api
+padel100_ring_commons,Padel 100 – Ring Commons Sports Centre,Dublin,3,playtomic,https://padel100.ie,awaiting_operator_or_api_permission
+fitzpatrick_castle,Padel at Fitzpatrick Castle Hotel,Dublin,3,playtomic,https://playtomic.com/clubs/padel-at-fitzpatrick-castle-hotel,live_metadata_verified_slots_need_official_api
+star_padel,Star Padel Club,Dublin,3,playtomic,https://playtomic.com/clubs/star-padel-club,live_metadata_verified_slots_need_official_api
+dlr_loughlinstown,dlr Leisure Loughlinstown,Dublin,3,dlr_enquiry,https://dlrleisure.ie/facilities/padel-courts/,enquiry_or_offline_booking_only
+castleknock_ltc,Castleknock Lawn Tennis Club,Dublin,2,smartclubcloud,https://www.cltc.ie,members_only
+charleville,Charleville Lawn Tennis Club,Dublin,2,member_proprietary,https://www.charlevilleltc.ie,members_only
+druid_sportsco,Druid Padel at SPORTSCO (Members Only),Dublin,2,playtomic,https://playtomic.com/clubs/druid-padel-at-sportsco-members-only,live_metadata_verified_slots_need_official_api
+padel100_balbriggan,Padel 100 – Balbriggan RFC,Dublin,2,playtomic,https://padel100.ie/play/book-a-court/,awaiting_operator_or_api_permission
+rockbrook,Rockbrook Padel Club,Dublin,2,padel_ireland_wp,https://padel-ireland.ie/bookings/,enquiry_or_offline_booking_only
+shankill,Shankill Tennis Club,Dublin,2,smartclubcloud,https://www.smartclubcloud.com/,blocked_login_or_antibot
+sutton,Sutton Lawn Tennis Club,Dublin,2,smartclubcloud,https://www.suttonltc.com,members_only
+westwood_westmanstown,West Wood Club Westmanstown,Dublin,2,member_proprietary,https://westwood.ie/clubs/westmanstown,members_only
+meadowbrook,dlr Leisure Meadowbrook,Dublin,2,dlr_enquiry,https://dlrleisure.ie/facilities/padel-courts/,enquiry_or_offline_booking_only
+bective,Bective Tennis & Padel Club,Dublin,1,courtreserve,https://www.bectivetennis.ie,members_only
+malahide,Malahide Lawn Tennis & Croquet Club,Dublin,1,member_proprietary,https://www.malahideltcc.com,members_only
+padel_pines,Padel & Pines,Dublin,1,playtomic,https://playtomic.com/clubs/padel-pines,live_metadata_verified_slots_need_official_api
+padelzone_celbridge,PadelZone Celbridge,Kildare,8,playtomic,https://playtomic.com/clubs/padelzone-celbridge,playtomic_ssr_available_commuter_belt
+indoor_padel_ireland,Indoor Padel Ireland (Navan),Meath,6,playtomic,https://playtomic.com/clubs/indoor-padel-ireland,playtomic_ssr_available_commuter_belt
+naas,Naas Lawn Tennis Club,Kildare,2,smartclubcloud,https://www.naasltc.net,members_only
+shoreline,Shoreline Padel Greystones,Wicklow,2,dlr_enquiry,https://shorelineleisure.ie,awaiting_operator_or_api_permission
+the_k_club,The K Club Padel,Kildare,2,playtomic,https://playtomic.com/clubs/the-k-club,playtomic_ssr_available_commuter_belt

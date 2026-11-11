@@ -1,0 +1,28 @@
+# Club          : Halpenny Padel Club (halpenny) — 4 verified padel courts
+# Booking URL   : https://playtomic.com/clubs/halpenny-padel-club
+# Opening Hours : Mon–Fri 08:00–22:00, Sat–Sun 08:30–20:00 | Prices: Off-Peak EUR 36.0 / Peak EUR 40.0
+# Snapshot Pass : prepeak (bucket=1h) — Day-of 16:30 check: captures final realized evening peak (17:00–23:00) & weather-driven fill
+# Optional exact timestamp override (uncomment if desired):
+# observed_at: 2026-11-08T20:00:00+00:00
+#
+# HOW TO FILL ANY DAY BELOW (leave unfilled days blank — blank days are safely ignored!):
+#   Option A (10-sec shorthand):  09:00-17:00 = 3 free €30
+#                                 17:00-21:30 = 0 free €45
+#   Option B (Copy-paste text) :  Court 1
+#                                 09:00 60 min €30
+#                                 Court 2
+#                                 No slots available
+
+=== 2026-11-09 (Monday) ===
+
+=== 2026-11-10 (Tuesday) ===
+
+=== 2026-11-11 (Wednesday) ===
+
+=== 2026-11-12 (Thursday) ===
+
+=== 2026-11-13 (Friday) ===
+
+=== 2026-11-14 (Saturday) ===
+
+=== 2026-11-15 (Sunday) ===

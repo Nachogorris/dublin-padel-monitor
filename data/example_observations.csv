@@ -1,0 +1,3 @@
+observed_at,venue_id,court_id,slot_start,slot_end,status,price_eur,source_url
+2026-11-06T12:00:00+00:00,house_of_padel,court_1,2026-11-07T18:00:00+00:00,2026-11-07T19:00:00+00:00,available,40.00,https://playtomic.com/clubs/house-of-padel
+2026-11-07T17:00:00+00:00,house_of_padel,court_1,2026-11-07T18:00:00+00:00,2026-11-07T19:00:00+00:00,unavailable,,https://playtomic.com/clubs/house-of-padel

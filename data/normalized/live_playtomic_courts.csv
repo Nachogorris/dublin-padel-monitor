@@ -1,0 +1,70 @@
+club_id,court_id,court_name,sport,court_environment,court_size,wall_type,is_active,source_origin,verified_at
+bushy_park,bushy_park_court_1,Court 1,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+bushy_park,bushy_park_court_2,Court 2,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+bushy_park,bushy_park_court_3,Court 3,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+bushy_park,bushy_park_court_4,Court 4,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+druid_coolmine,82e932ad-212e-45e5-b0fe-c702fdb3d3f9,Court 1,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:29+00:00
+druid_coolmine,430edac1-213b-4bf6-b71a-df11cf1b6ee8,Court 2,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:29+00:00
+druid_coolmine,85b3a2d9-b1cc-4422-ac4d-f2a5f027afdf,Court 3,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:29+00:00
+druid_coolmine,78546a5c-a6a8-47e6-9434-ec10f27b7aae,The Loghouse ShowCourt,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:29+00:00
+druid_kimmage,aaba4cae-d8b7-46b1-af23-0d6e9d121f1a,Court 1,PADEL,covered_outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:23+00:00
+druid_kimmage,b570714f-ee30-403d-add1-0e42ebac2679,Court 2,PADEL,covered_outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:23+00:00
+druid_kimmage,e08a9ada-0429-4532-97b5-0c40f34e8942,Court 3,PADEL,covered_outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:23+00:00
+druid_sportsco,d2e68b71-887d-4477-8040-9e1063b77fdd,Padel 1,PADEL,outdoor,double,Crystal,1,live_public,2026-11-07T23:28:32+00:00
+druid_sportsco,067a1374-9a8c-47b3-accd-d0bcda01d2e8,Padel 2,PADEL,outdoor,double,Crystal,1,live_public,2026-11-07T23:28:32+00:00
+fitzpatrick_castle,48711c2f-e657-4a6b-b58d-38be40f231f6,Court 1,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:47+00:00
+fitzpatrick_castle,526cc9fc-b938-4755-9f2f-2e912ba63da7,Court 2,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:47+00:00
+fitzpatrick_castle,601dbcdc-38b0-4345-8290-e930e6d81b49,Court 3,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:47+00:00
+halpenny,4ee69298-d0fb-42ed-bea0-fadf2d380c61,Padel 1,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:43+00:00
+halpenny,540989d1-aefb-4222-83c5-7d52a43f71f7,Padel 2,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:43+00:00
+halpenny,be84b2bf-114e-48d8-8d56-c375954dde2e,Padel 3,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:43+00:00
+halpenny,bf791f98-a6e7-414d-a089-5aaf877513be,Padel 4,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:43+00:00
+house_of_padel,8836f7fb-5452-49da-a3a4-f5d25dd2c69b,CUPRA Court,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:27:57+00:00
+house_of_padel,1414ebb2-b2df-43b6-8702-a7b6f72464de,CUPRA Formentor 4,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:27:57+00:00
+house_of_padel,80253fe0-52d1-4912-b2f1-11506050dda5,Court 2,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:27:57+00:00
+house_of_padel,a892d0e7-56f9-42a6-b81f-cce9d5ae1420,Court 3,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:27:57+00:00
+house_of_padel,c433fee6-8e08-444c-979d-6bf2f41868fe,Single Court,PADEL,indoor,single,Panoramic,1,live_public,2026-11-07T23:27:57+00:00
+house_of_padel,edb5edb5-6331-4fc8-892b-1dc9ec117fcb,PICKLEBALL COURT,PICKLEBALL,indoor,double,Concrete,1,live_public,2026-11-07T23:27:57+00:00
+indoor_padel_ireland,ffc22837-4dd9-4ae6-9177-3a4b50bc141d,Court 1,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:49+00:00
+indoor_padel_ireland,55a07648-7d7d-4e74-b04e-5ac65bfe6072,Court 2,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:49+00:00
+indoor_padel_ireland,40f7b6fd-8326-4d55-b747-e9a205c6b0f2,Court 3,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:49+00:00
+indoor_padel_ireland,7341e326-7add-4545-9ae9-bf3b8dcc16eb,Court 4,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:49+00:00
+indoor_padel_ireland,5693c239-5522-4b30-9a4e-6fe6552c60ad,Court 5,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:49+00:00
+indoor_padel_ireland,01ffb11c-3ac3-42c6-a46a-960aef2d5e27,Single Court,PADEL,indoor,single,Panoramic,1,live_public,2026-11-07T23:28:49+00:00
+leopardstown_golf,cc629c06-4e33-46eb-8ca8-0e7bdb5015ae,Padel Court 1,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:33+00:00
+leopardstown_golf,75da92bf-e8bc-4c83-920a-f52afb3b095c,Padel Court 2,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:33+00:00
+leopardstown_golf,32823a17-0349-496b-868b-17a2ea774a53,Padel Court 3,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:33+00:00
+leopardstown_golf,9ab4370b-d120-4cc9-906a-fc7e966af1eb,Padel Court 4,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:33+00:00
+ob_padel,9a0c93ca-aed9-4c36-a0d3-e9c90d0affca,Padel Court 1,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:16+00:00
+ob_padel,86b5c1f8-8005-43c1-b023-07f115cee1fe,Padel Court 2,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:16+00:00
+ob_padel,ddc0e81c-c0b4-4f08-9343-07f10dcbc689,Padel Court 3,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:16+00:00
+ob_padel,de130c88-bf82-4eaf-b76d-15d1e5708c72,Squash,SQUASH,indoor,double,,1,live_public,2026-11-07T23:28:16+00:00
+padel100_ring_commons,padel100_ring_commons_court_1,Court 1,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel100_ring_commons,padel100_ring_commons_court_2,Court 2,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel100_ring_commons,padel100_ring_commons_court_3,Court 3,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_1,Court 1,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_2,Court 2,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_3,Court 3,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_4,Court 4,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_5,Court 5,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_6,Court 6,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_7,Court 7,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_8,Court 8,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_dome,padel_dome_court_9,Court 9,PADEL,indoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+padel_pines,a20301eb-92b3-4d5e-96f5-9ba55dbe0c9a,Padel & Pines Court,PADEL,outdoor,double,Panoramic,1,live_public,2026-11-07T23:28:39+00:00
+padelzone_celbridge,5ac6a1b4-6cd0-47a5-8741-882c105138f2,EcoHouse Court 5,PADEL,indoor,double,Crystal,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,7e198d39-954f-4a9f-abea-e33b5c30fd03,Head Padel 7,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,b4358e01-43b5-4f9d-9e71-fe7c197aa9d2,Head Padel 8,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,f12ff8ab-614e-4f6b-b28d-9637bc202431,Head padel Court 1,PADEL,indoor,double,Crystal,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,0d492d50-ff3b-4bed-9c85-e9b3113bedc6,Head padel Court 2,PADEL,indoor,double,Crystal,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,ea06a3ca-cb68-4be0-b6a2-c4ddf9da9448,Kla Crofton motors court 4,PADEL,indoor,double,Crystal,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,55ec1bfc-661c-4d89-aa27-9807671e9d05,Log house court 3,PADEL,indoor,double,Crystal,1,live_public,2026-11-07T23:28:48+00:00
+padelzone_celbridge,2ccb61a2-25ef-4c28-953e-68ead3b595c2,Solid gear footwear 6,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:48+00:00
+portmarnock,portmarnock_court_1,Court 1,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+portmarnock,portmarnock_court_2,Court 2,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+portmarnock,portmarnock_court_3,Court 3,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+portmarnock,portmarnock_court_4,Court 4,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+portmarnock,portmarnock_court_5,Court 5,PADEL,outdoor,double,,1,live_public,2026-11-08T00:20:31+00:00
+star_padel,86b9a4f5-1fb6-410a-9b12-8f80809b9e53,Padel 1,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:09+00:00
+star_padel,44e34263-a27b-4827-95b2-75140192c1bc,Padel 2,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:09+00:00
+star_padel,1417edad-e38b-4020-b409-f20b5173e834,Padel 3,PADEL,indoor,double,Panoramic,1,live_public,2026-11-07T23:28:09+00:00

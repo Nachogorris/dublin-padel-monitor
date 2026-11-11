@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+.git
+.github
+.pytest_cache
+logs/
+.venv
+venv/
+output/*.xlsx
+output/*.csv
+data/raw/headless_snapshots/

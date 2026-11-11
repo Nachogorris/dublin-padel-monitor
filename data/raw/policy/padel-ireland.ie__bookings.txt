@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+    <title>Bookings &#8211; Padel Ireland</title>
+<script type="text/javascript">var ajaxurl = "https://padel-ireland.ie/wp-admin/admin-ajax.php"</script><meta name='robots' content='max-image-preview:large' />
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="format-detection" content="telephone=no">
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Padel Ireland &raquo; Feed" href="https://padel-ireland.ie/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Padel Ireland &raquo; Comments Feed" href="https://padel-ireland.ie/comments/feed/" />
+
+<link rel="shortcut icon" href="https://padel-ireland.ie/wp-content/uploads/2015/09/favicon.jpg"  />
+
+<!--[if lt IE 9]><script src="https://padel-ireland.ie/wp-content/themes/jupiter/js/html5shiv.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/css/ie.css" />
+<![endif]-->
+<!--[if IE 9]>
+<script src="https://padel-ireland.ie/wp-content/themes/jupiter/js/ie/placeholder.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+var abb = {};
+var php = {};
+var mk_header_parallax, mk_banner_parallax, mk_page_parallax, mk_footer_parallax, mk_body_parallax;
+var mk_images_dir = "https://padel-ireland.ie/wp-content/themes/jupiter/images",
+mk_theme_js_path = "https://padel-ireland.ie/wp-content/themes/jupiter/js",
+mk_theme_dir = "https://padel-ireland.ie/wp-content/themes/jupiter",
+mk_captcha_placeholder = "Enter Captcha",
+mk_captcha_invalid_txt = "Invalid. Try again.",
+mk_captcha_correct_txt = "Captcha correct.",
+mk_responsive_nav_width = 1140,
+mk_check_rtl = true,
+mk_grid_width = 1140,
+mk_ajax_search_option = "disable",
+mk_preloader_txt_color = "#444444",
+mk_preloader_bg_color = "#ffffff",
+mk_accent_color = "#45b85b",
+mk_go_to_top =  "true",
+mk_preloader_bar_color = "#45b85b",
+mk_preloader_logo = "";
+var mk_header_parallax = false,
+mk_banner_parallax = false,
+mk_page_parallax = false,
+mk_footer_parallax = false,
+mk_body_parallax = false,
+mk_no_more_posts = "No More Posts";
+function is_touch_device() {
+              return ("ontouchstart" in document.documentElement);
+          }
+</script>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://padel-ireland.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpadel-ireland.ie%2Fbookings%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://padel-ireland.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpadel-ireland.ie%2Fbookings%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='theme-styles-css' href='https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/css/theme-styles.min.css?ver=7.1.4' media='all' />
+<link rel='stylesheet' id='theme-icons-css' href='https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/css/theme-icons.min.css?ver=7.1.4' media='all' />
+<link rel='stylesheet' id='google-font-api-special-1-css' href='https://fonts.googleapis.com/css?family=Open+Sans:100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic,100,200,300,400,500,600,700,800,900&#038;ver=7.1.4' media='all' />
+<link rel='stylesheet' id='mk-style-css' href='https://padel-ireland.ie/wp-content/themes/jupiter/style.css?ver=7.1.4' media='all' />
+<link rel='stylesheet' id='theme-dynamic-styles-css' href='https://padel-ireland.ie/wp-content/themes/jupiter/custom.css?ver=7.1.4' media='all' />
+<style id="theme-dynamic-styles-inline-css">
+body {}body {font-family: Open Sans }body{background-color:#fff; }#mk-header{background-color:#f7f7f7; }.mk-header-bg{background-color:#fff; }.mk-header-toolbar{background-color: #45b85b;}#theme-page{background-color:#fff; }#mk-footer{background-color:#3d4045; }#mk-footer .footer-wrapper{padding:30px 0;}#mk-footer .widget{margin-bottom:40px;}#mk-footer [class*='mk-col-'] {padding:0 2%;}#sub-footer{background-color: #45b85b;}.mk-footer-copyright {font-size:11px;letter-spacing: 1px;}#mk-boxed-layout{  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);  -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0);  box-shadow: 0 0 0px rgba(0, 0, 0, 0);}.mk-tabs-panes,.mk-news-tab .mk-tabs-tabs li.ui-tabs-active a,.mk-divider .divider-go-top,.ajax-container,.mk-fancy-title.pattern-style span,.mk-portfolio-view-all,.mk-woo-view-all,.mk-blog-view-all{background-color: #fff;}.mk-header-bg{  -webkit-opacity: 1;  -moz-opacity: 1;  -o-opacity: 1;  opacity: 1;}.header-sticky-ready .mk-header-bg{  -webkit-opacity: 1;  -moz-opacity: 1;  -o-opacity: 1;  opacity: 1;}.mk-header-inner,.header-sticky-ready .mk-header-inner,.header-style-2.header-sticky-ready .mk-classic-nav-bg{border-bottom:1px solid #ededed;}.header-style-4.header-align-left .mk-header-inner,.header-style-4.header-align-center .mk-header-inner {border-bottom:none;border-right:1px solid #ededed;}.header-style-4.header-align-right .mk-header-inner {border-bottom:none;border-left:1px solid #ededed;}.header-style-2 .mk-header-nav-container {border-top:1px solid #ededed;}.mk-header-toolbar{border-bottom:1px solid #45b85b;}#mk-header{border-bottom:1px solid #ededed;}body{font-size: 14px;color: #777777;font-weight: normal;line-height: 1.66em;}p,.mk-box-icon-2-content {font-size: 16px;color: #777777;line-height: 1.66em;}a {color: #2e2e2e;}a:hover {color: #45b85b;}#theme-page strong {color: #45b85b;}#theme-page h1{font-size: 36px;color: #404040;font-weight: bold;text-transform: uppercase;}#theme-page h2{font-size: 30px;color: #404040;font-weight: bold;text-transform: uppercase;}#theme-page h3{font-size: 24px;color: #404040;font-weight: bold;text-transform: uppercase;}#theme-page h4{font-size: 18px;color: #404040;font-weight: bold;text-transform: uppercase;}#theme-page h5{font-size: 16px;color: #404040;font-weight: bold;text-transform: uppercase;}#theme-page h6{font-size: 14px;color: #404040;font-weight: normal;text-transform: uppercase;}.page-introduce-title{font-size: 20px;color: #4d4d4d;text-transform: uppercase;font-weight: normal;letter-spacing: 2px;}.page-introduce-subtitle{font-size: 14px;line-height: 100%;color: #a3a3a3;font-size: 14px;text-transform: none;}::-webkit-selection{background-color: #45b85b;color:#fff;}::-moz-selection{background-color: #45b85b;color:#fff;}::selection{background-color: #45b85b;color:#fff;}#mk-sidebar,#mk-sidebar p{font-size: 14px;color: #999999;font-weight: normal;}#mk-sidebar .widgettitle{text-transform: uppercase;font-size: 14px;color: #333333;font-weight: bolder;}#mk-sidebar .widgettitle a{color: #333333;}#mk-sidebar .widget a{color: #999999;}#mk-footer,#mk-footer p{font-size: 14px;color: #ffffff;font-weight: normal;}#mk-footer .widgettitle{text-transform: uppercase;font-size: 14px;color: #ffffff;font-weight: 800;}#mk-footer .widgettitle a{color: #ffffff;}#mk-footer .widget:not(.widget_social_networks) a{color: #ffffff;}.mk-side-dashboard {background-color: #444444;}.mk-side-dashboard,.mk-side-dashboard p{font-size: 12px;color: #eeeeee;font-weight: normal;}.mk-side-dashboard .widgettitle{text-transform: uppercase;font-size: 14px;color: #ffffff;font-weight: 800;}.mk-side-dashboard .widgettitle a{color: #ffffff;}.mk-side-dashboard .widget a{color: #fafafa;}.sidedash-navigation-ul li a,.sidedash-navigation-ul li .mk-nav-arrow {color:#ffffff;}.sidedash-navigation-ul li a:hover {color:#ffffff;background-color:;}.mk-fullscreen-nav{background-color:#444444;}.mk-fullscreen-nav .mk-fullscreen-nav-wrapper .mk-fullscreen-nav-logo {margin-bottom: 125px;}.mk-fullscreen-nav .fullscreen-navigation-ul .menu-item a{color: #ffffff;text-transform: uppercase;font-size: 16px;letter-spacing: 0;font-weight: 800;padding: 25px 0;color: #ffffff;}.mk-fullscreen-nav .fullscreen-navigation-ul .menu-item a:hover{background-color: #ffffff;color: #444444;}#mk-sidebar .widget:not(.widget_social_networks) a:hover {color: #45b85b;}#mk-footer .widget:not(.widget_social_networks) a:hover {color: #45b85b;}.mk-side-dashboard .widget:not(.widget_social_networks) a:hover{color: #45b85b;}.mk-grid{max-width: 1140px;}.mk-header-nav-container, .mk-classic-menu-wrapper{width: 1140px;}.theme-page-wrapper #mk-sidebar.mk-builtin{width: 27%;}.theme-page-wrapper.right-layout .theme-content,.theme-page-wrapper.left-layout .theme-content{width: 73%;}.mk-boxed-enabled #mk-boxed-layout,.mk-boxed-enabled #mk-boxed-layout .header-style-1 .mk-header-holder,.mk-boxed-enabled #mk-boxed-layout .header-style-3 .mk-header-holder{max-width: 1200px;}.mk-boxed-enabled #mk-boxed-layout .header-style-1 .mk-header-holder,.mk-boxed-enabled #mk-boxed-layout .header-style-3 .mk-header-holder{width: 100% !important;left:auto !important;}.mk-boxed-enabled #mk-boxed-layout .header-style-2.header-sticky-ready .mk-header-nav-container {width: 1200px !important;left:auto !important;}.header-style-1 .mk-header-start-tour,.header-style-3 .mk-header-start-tour,.header-style-1 .mk-header-inner #mk-header-search,.header-style-1 .mk-header-inner,.header-style-1 .mk-search-trigger,.header-style-3 .mk-header-inner,.header-style-1 .header-logo,.header-style-3 .header-logo,.header-style-1 .shopping-cart-header,.header-style-3 .shopping-cart-header,.header-style-1 #mk-header-social.header-section a,.header-style-2 #mk-header-social.header-section a,.header-style-3 #mk-header-social.header-section a{height: 90px;line-height:90px;}@media handheld, only screen and (max-width: 1140px){.header-grid.mk-grid .header-logo.left-logo{left: 15px !important;}.header-grid.mk-grid .header-logo.right-logo, .mk-header-right {right: 15px !important;}.header-style-3 .shopping-cart-header {right: 30px;}}#mk-theme-container:not(.mk-transparent-header) .header-style-1 .mk-header-padding-wrapper,#mk-theme-container:not(.mk-transparent-header) .header-style-3 .mk-header-padding-wrapper {padding-top:122px;}@media handheld, only screen and (max-width: 960px){.theme-page-wrapper .theme-content{width: 100% !important;float: none !important;}.theme-page-wrapper{padding-right:15px !important;padding-left: 15px !important;}.theme-page-wrapper .theme-content:not(.no-padding){padding:25px 0 !important;}.theme-page-wrapper #mk-sidebar{width: 100% !important;float: none !important;padding: 0 !important;}.theme-page-wrapper #mk-sidebar .sidebar-wrapper{padding:20px 0 !important;}}@media handheld, only screen and (max-width: 1140px){.mk-go-top,.mk-quick-contact-wrapper{bottom:70px !important;}.mk-grid {width: 100%;}.mk-padding-wrapper {padding: 0 20px;} }#mk-toolbar-navigation ul li a,.mk-language-nav > a,.mk-header-login .mk-login-link,.mk-subscribe-link,.mk-checkout-btn,.mk-header-tagline a,.header-toolbar-contact a,#mk-toolbar-navigation ul li a:hover,.mk-language-nav > a:hover,.mk-header-login .mk-login-link:hover,.mk-subscribe-link:hover,.mk-checkout-btn:hover,.mk-header-tagline a:hover{color:#ffffff;}.mk-header-tagline,.header-toolbar-contact,.mk-header-date{color:#ffffff;}.mk-header-toolbar #mk-header-social a i {color:#ffffff;}.header-section#mk-header-social ul li a i {color: #999999;}.header-section#mk-header-social ul li a:hover i {color: #cccccc;}.header-style-2 .header-logo,.header-style-4 .header-logo{height: 90px !important;}.header-style-4 .header-logo {margin:10px 0;}.header-style-2 .mk-header-inner{line-height:90px;}.mk-header-nav-container{background-color: ;}.mk-header-start-tour{font-size: 14px;color: #333333;}.mk-header-start-tour:hover{color: #333333;}.mk-classic-nav-bg{background-color:#fff; }.mk-search-trigger,.mk-shoping-cart-link i,.mk-header-cart-count,.mk-toolbar-resposnive-icon i{color: #444444;}.mk-css-icon-close div,.mk-css-icon-menu div {background-color: #444444;}#mk-header-searchform .text-input{background-color: !important;color: #c7c7c7;}#mk-header-searchform span i{color: #c7c7c7;}#mk-header-searchform .text-input::-webkit-input-placeholder{color: #c7c7c7;}#mk-header-searchform .text-input:-ms-input-placeholder{color: #c7c7c7;}#mk-header-searchform .text-input:-moz-placeholder{color: #c7c7c7;}.header-style-1.header-sticky-ready .menu-hover-style-1 .main-navigation-ul > li > a,.header-style-3.header-sticky-ready .menu-hover-style-1 .main-navigation-ul > li > a,.header-style-1.header-sticky-ready .menu-hover-style-5 .main-navigation-ul > li,.header-style-1.header-sticky-ready .menu-hover-style-2 .main-navigation-ul > li > a,.header-style-3.header-sticky-ready .menu-hover-style-2 .main-navigation-ul > li > a,.header-style-1.header-style-1.header-sticky-ready .menu-hover-style-4 .main-navigation-ul > li > a,.header-style-3.header-sticky-ready .menu-hover-style-4 .main-navigation-ul > li > a,.header-style-1.header-sticky-ready .menu-hover-style-3 .main-navigation-ul > li,.header-style-1.header-sticky-ready .mk-header-inner #mk-header-search,.header-style-3.header-sticky-ready .mk-header-holder #mk-header-search,.header-sticky-ready.header-style-3 .mk-header-start-tour,.header-sticky-ready.header-style-1 .mk-header-start-tour,.header-sticky-ready.header-style-1 .mk-header-inner,.header-sticky-ready.header-style-3 .mk-header-inner,.header-sticky-ready.header-style-3 .header-logo,.header-sticky-ready.header-style-1 .header-logo,.header-sticky-ready.header-style-1 .mk-search-trigger,.header-sticky-ready.header-style-1 .mk-search-trigger i,.header-sticky-ready.header-style-1 .shopping-cart-header,.header-sticky-ready.header-style-1 .shopping-cart-header i,.header-sticky-ready.header-style-3 .shopping-cart-header,.header-sticky-ready.header-style-1 #mk-header-social.header-section a,.header-sticky-ready.header-style-3 #mk-header-social.header-section a{height:64px !important;line-height:64px !important;}#mk-header-social.header-section a.small {margin-top: 28px;}#mk-header-social.header-section a.medium {margin-top: 20px;}#mk-header-social.header-section a.large {margin-top: 12px;}.header-sticky-ready #mk-header-social.header-section a.small,.header-sticky-ready #mk-header-social.header-section a.medium,.header-sticky-ready #mk-header-social.header-section a.large {margin-top: 15px;line-height: 16px !important;height: 16px !important;font-size: 16px !important;width: 16px !important;padding: 8px !important;}.header-sticky-ready #mk-header-social.header-section a.small i:before,.header-sticky-ready #mk-header-social.header-section a.medium i:before,.header-sticky-ready #mk-header-social.header-section a.large i:before {line-height: 16px !important;font-size: 16px !important;}.main-navigation-ul > li.menu-item > a.menu-item-link{color: #444444;font-size: 12px;font-weight: bold;padding-right:18px !important;padding-left:18px !important;text-transform:uppercase;letter-spacing:0px;}.mk-vm-menuwrapper ul li a {color: #444444;font-size: 12px;font-weight: bold;text-transform:uppercase;}.mk-vm-menuwrapper li > a:after,.mk-vm-menuwrapper li.mk-vm-back:after {color: #444444;}.main-navigation-ul > li.no-mega-menu ul.sub-menu li.menu-item a.menu-item-link {width:230px;}.mk-header-3-menu-trigger {color: #444444;}.menu-hover-style-1 .main-navigation-ul li.menu-item > a.menu-item-link:hover,.menu-hover-style-1 .main-navigation-ul li.menu-item:hover > a.menu-item-link,.menu-hover-style-1 .main-navigation-ul li.current-menu-item > a.menu-item-link,.menu-hover-style-1 .main-navigation-ul li.current-menu-ancestor > a.menu-item-link,.menu-hover-style-2 .main-navigation-ul li.menu-item > a.menu-item-link:hover,.menu-hover-style-2 .main-navigation-ul li.menu-item:hover > a.menu-item-link,.menu-hover-style-2 .main-navigation-ul li.current-menu-item > a.menu-item-link,.menu-hover-style-2 .main-navigation-ul li.current-menu-ancestor > a.menu-item-link,.menu-hover-style-1.mk-vm-menuwrapper li.menu-item > a:hover,.menu-hover-style-1.mk-vm-menuwrapper li.menu-item:hover > a,.menu-hover-style-1.mk-vm-menuwrapper li.current-menu-item > a,.menu-hover-style-1.mk-vm-menuwrapper li.current-menu-ancestor > a,.menu-hover-style-2.mk-vm-menuwrapper li.menu-item > a:hover,.menu-hover-style-2.mk-vm-menuwrapper li.menu-item:hover > a,.menu-hover-style-2.mk-vm-menuwrapper li.current-menu-item > a,.menu-hover-style-2.mk-vm-menuwrapper li.current-menu-ancestor > a{color: #45b85b !important;}.menu-hover-style-3 .main-navigation-ul > li.menu-item > a.menu-item-link:hover,.menu-hover-style-3 .main-navigation-ul > li.menu-item:hover > a.menu-item-link,.menu-hover-style-3.mk-vm-menuwrapper li > a:hover,.menu-hover-style-3.mk-vm-menuwrapper li:hover > a{border:2px solid #45b85b;}.menu-hover-style-3 .main-navigation-ul > li.current-menu-item > a.menu-item-link,.menu-hover-style-3 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link,.menu-hover-style-3.mk-vm-menuwrapper li.current-menu-item > a,.menu-hover-style-3.mk-vm-menuwrapper li.current-menu-ancestor > a{border:2px solid #45b85b;background-color:#45b85b;color:#ffffff;}.menu-hover-style-3.mk-vm-menuwrapper li.current-menu-ancestor > a:after {color:#ffffff;}.menu-hover-style-4 .main-navigation-ul li.menu-item > a.menu-item-link:hover,.menu-hover-style-4 .main-navigation-ul li.menu-item:hover > a.menu-item-link,.menu-hover-style-4 .main-navigation-ul li.current-menu-item > a.menu-item-link,.menu-hover-style-4 .main-navigation-ul li.current-menu-ancestor > a.menu-item-link,.menu-hover-style-4.mk-vm-menuwrapper li a:hover,.menu-hover-style-4.mk-vm-menuwrapper li:hover > a,.menu-hover-style-4.mk-vm-menuwrapper li.current-menu-item > a,.menu-hover-style-4.mk-vm-menuwrapper li.current-menu-ancestor > a,.menu-hover-style-5 .main-navigation-ul > li.menu-item > a.menu-item-link:after{background-color: #45b85b;color:#ffffff;}.menu-hover-style-4.mk-vm-menuwrapper li.current-menu-ancestor > a:after,.menu-hover-style-4.mk-vm-menuwrapper li.current-menu-item > a:after,.menu-hover-style-4.mk-vm-menuwrapper li:hover > a:after,.menu-hover-style-4.mk-vm-menuwrapper li a:hover::after {color:#ffffff;}.menu-hover-style-1 .main-navigation-ul > li.dropdownOpen > a.menu-item-link,.menu-hover-style-1 .main-navigation-ul > li.active > a.menu-item-link,.menu-hover-style-1 .main-navigation-ul > li.open > a.menu-item-link,.menu-hover-style-1 .main-navigation-ul > li.menu-item > a:hover,.menu-hover-style-1 .main-navigation-ul > li.current-menu-item > a.menu-item-link,.menu-hover-style-1 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link {border-top-color:#45b85b;}.menu-hover-style-1.mk-vm-menuwrapper li > a:hover,.menu-hover-style-1.mk-vm-menuwrapper li.current-menu-item > a,.menu-hover-style-1.mk-vm-menuwrapper li.current-menu-ancestor > a{border-left-color:#45b85b;}.header-style-1 .menu-hover-style-1 .main-navigation-ul > li > a,.header-style-1 .menu-hover-style-2 .main-navigation-ul > li > a,.header-style-1 .menu-hover-style-4 .main-navigation-ul > li > a,.header-style-1 .menu-hover-style-5 .main-navigation-ul > li {height: 90px;line-height:90px;}.header-style-1 .menu-hover-style-3 .main-navigation-ul > li,.header-style-1 .menu-hover-style-5 .main-navigation-ul > li{height: 90px;line-height:90px;}.header-style-1 .menu-hover-style-3 .main-navigation-ul > li > a {line-height:45px;}.header-style-1.header-sticky-ready .menu-hover-style-3 .main-navigation-ul > li > a {line-height:42.666666666667px;}.header-style-1 .menu-hover-style-5 .main-navigation-ul > li > a {line-height:20px;vertical-align:middle;}.main-navigation-ul > li.no-mega-menu  ul.sub-menu:after,.main-navigation-ul > li.has-mega-menu > ul.sub-menu:after{  background-color:#45b85b;}.mk-shopping-cart-box {border-top:2px solid #45b85b;}#mk-main-navigation li.no-mega-menu ul.sub-menu,#mk-main-navigation li.has-mega-menu > ul.sub-menu,.mk-shopping-cart-box{background-color: #333333;}#mk-main-navigation ul.sub-menu a.menu-item-link,#mk-main-navigation ul .megamenu-title,.megamenu-widgets-container a,.mk-shopping-cart-box .product_list_widget li a,.mk-shopping-cart-box .product_list_widget li.empty,.mk-shopping-cart-box .product_list_widget li span,.mk-shopping-cart-box .widget_shopping_cart .total{color: #b3b3b3;}.mk-shopping-cart-box .mk-button.cart-widget-btn {border-color:#b3b3b3;color:#b3b3b3;}.mk-shopping-cart-box .mk-button.cart-widget-btn:hover {background-color:#b3b3b3;color:#333333;}#mk-main-navigation ul .megamenu-title{color: #ffffff;}#mk-main-navigation ul .megamenu-title:after{background-color: #ffffff;}.megamenu-widgets-container {color: #b3b3b3;}.megamenu-widgets-container .widgettitle{text-transform: uppercase;font-size: 14px;font-weight: bolder;}#mk-main-navigation ul.sub-menu li.menu-item ul.sub-menu li.menu-item a.menu-item-link i{color: #e0e0e0;}#mk-main-navigation ul.sub-menu a.menu-item-link:hover,.main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link,.main-navigation-ul ul.sub-menu li.current-menu-parent > a.menu-item-link{color: #ffffff !important;}.megamenu-widgets-container a:hover {color: #ffffff;}.main-navigation-ul li.menu-item ul.sub-menu li.menu-item a.menu-item-link:hover,.main-navigation-ul li.menu-item ul.sub-menu li.menu-item:hover > a.menu-item-link,.main-navigation-ul ul.sub-menu li.menu-item a.menu-item-link:hover,.main-navigation-ul ul.sub-menu li.menu-item:hover > a.menu-item-link,.main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link,.main-navigation-ul ul.sub-menu li.current-menu-parent > a.menu-item-link{background-color:transparent !important;}.mk-search-trigger:hover,.mk-header-start-tour:hover{color: #45b85b;}.main-navigation-ul li.menu-item ul.sub-menu li.menu-item a.menu-item-link{font-size: 12px;font-weight: normal;text-transform:uppercase;letter-spacing: 1px;}.has-mega-menu .megamenu-title {letter-spacing: 1px;}.header-style-4 {text-align : left} .mk-vm-menuwrapper li > a {   padding-right: 45px; } .header-style-4 .mk-header-right {text-align: center !important;}.header-style-4 .mk-header-right #mk-header-social{float: none !important;display: inline-block !important;}@media handheld, only screen and (max-width: 1140px){.header-style-1 .mk-header-inner,.header-style-3 .mk-header-inner,.header-style-3 .header-logo,.header-style-1 .header-logo,.header-style-1 .shopping-cart-header,.header-style-3 .shopping-cart-header{height: 90px!important;line-height: 90px;}#mk-header:not(.header-style-4) .mk-header-holder {position:relative !important;top:0 !important;}.mk-header-padding-wrapper {display:none !important;}.mk-header-nav-container{width: auto !important;display:none;}.header-style-1 .mk-header-right,.header-style-2 .mk-header-right,.header-style-3 .mk-header-right {right:55px !important;}.header-style-1 .mk-header-inner #mk-header-search,.header-style-2 .mk-header-inner #mk-header-search,.header-style-3 .mk-header-inner #mk-header-search{display:none !important;}.mk-fullscreen-search-overlay {display:none;}#mk-header-search{padding-bottom: 10px !important;}#mk-header-searchform span .text-input{width: 100% !important;}.header-style-2 .header-logo .center-logo{    text-align: right !important;}.header-style-2 .header-logo .center-logo a{    margin: 0 !important;}.header-logo,.header-style-4 .header-logo{    height: 90px !important;}.header-style-4 .shopping-cart-header {display:none;}.mk-header-inner{padding-top:0 !important;}.header-logo{position:relative !important;right:auto !important;left:auto !important;float:left !important;text-align:left;}.shopping-cart-header{margin:0 20px 0 0 !important;}#mk-responsive-nav{background-color:#ffffff !important;}.mk-header-nav-container #mk-responsive-nav{visibility: hidden;}#mk-responsive-nav li ul li .megamenu-title:hover,#mk-responsive-nav li ul li .megamenu-title,#mk-responsive-nav li a, #mk-responsive-nav li ul li a:hover,#mk-responsive-nav .mk-nav-arrow{  color:#444444 !important;}.mk-mega-icon{display:none !important;}.mk-header-bg{zoom:1 !important;filter:alpha(opacity=100) !important;opacity:1 !important;}.header-style-1 .mk-nav-responsive-link,.header-style-2 .mk-nav-responsive-link{display:block !important;}.mk-header-nav-container{height:100%;z-index:200;}#mk-main-navigation{position:relative;z-index:2;}.mk_megamenu_columns_2,.mk_megamenu_columns_3,.mk_megamenu_columns_4,.mk_megamenu_columns_5,.mk_megamenu_columns_6{width:100% !important;}.header-style-1.header-align-right .header-logo img,.header-style-3.header-align-right .header-logo img,.header-style-3.header-align-center .header-logo img {float: left !important;right:auto !important;}.header-style-4 .mk-header-inner {width: auto !important;position: relative !important;overflow: visible;padding-bottom: 0;}.admin-bar .header-style-4 .mk-header-inner {top:0 !important;}.header-style-4 .mk-header-right {display: none;}.header-style-4 .mk-nav-responsive-link {display: block !important;}.header-style-4 .mk-vm-menuwrapper,.header-style-4 #mk-header-search {display: none;}.header-style-4 .header-logo {width:auto !important;display: inline-block !important;text-align:left !important;margin:0 !important;}.vertical-header-enabled .header-style-4 .header-logo img {max-width: 100% !important;left: 20px!important;top:50%!important;-webkit-transform: translate(0, -50%)!important;-moz-transform: translate(0, -50%)!important;-ms-transform: translate(0, -50%)!important;-o-transform: translate(0, -50%)!important;transform: translate(0, -50%)!important;position:relative !important;}.vertical-header-enabled.vertical-header-left #theme-page > .mk-main-wrapper-holder,.vertical-header-enabled.vertical-header-center #theme-page > .mk-main-wrapper-holder,.vertical-header-enabled.vertical-header-left #theme-page > .mk-page-section,.vertical-header-enabled.vertical-header-center #theme-page > .mk-page-section,.vertical-header-enabled.vertical-header-left #theme-page > .wpb_row,.vertical-header-enabled.vertical-header-center #theme-page > .wpb_row,.vertical-header-enabled.vertical-header-left #mk-theme-container:not(.mk-transparent-header), .vertical-header-enabled.vertical-header-center #mk-footer,.vertical-header-enabled.vertical-header-left #mk-footer,.vertical-header-enabled.vertical-header-center #mk-theme-container:not(.mk-transparent-header) {  padding-left: 0 !important;}.vertical-header-enabled.vertical-header-right #theme-page > .mk-main-wrapper-holder,.vertical-header-enabled.vertical-header-right #theme-page > .mk-page-section,.vertical-header-enabled.vertical-header-right #theme-page > .wpb_row,.vertical-header-enabled.vertical-header-right #mk-footer,.vertical-header-enabled.vertical-header-right #mk-theme-container:not(.mk-transparent-header) {  padding-right: 0 !important;}}@media handheld, only screen and (min-width: 1140px) {  .mk-transparent-header .sticky-style-slide .mk-header-holder {    position: absolute;  }  .mk-transparent-header .remove-header-bg-true:not(.header-sticky-ready) .mk-header-bg {    opacity: 0;  }  .mk-transparent-header .remove-header-bg-true#mk-header:not(.header-sticky-ready) .mk-header-inner {    border: 0;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-desktop-logo.light-logo {    display: block !important;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-desktop-logo.dark-logo {    display: none !important;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .main-navigation-ul > li.menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-search-trigger,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-shoping-cart-link i,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-header-cart-count,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-header-start-tour,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) #mk-header-social.header-section a i,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul > li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul > li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul > li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-vm-menuwrapper li a,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-vm-menuwrapper li > a:after,   .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-vm-menuwrapper li.mk-vm-back:after {    color: #fff !important;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .mk-css-icon-menu div {    background-color: #fff !important;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.dropdownOpen > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.active > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.open > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.menu-item > a:hover,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link {    border-top-color: #fff;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li.current-menu-item > a,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li.current-menu-ancestor > a {    border: 2px solid #fff;    background-color: #fff;    color: #222 !important;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li > a:hover,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li:hover > a {    border: 2px solid #fff;  }  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.light-header-skin:not(.header-sticky-ready) .menu-hover-style-5 .main-navigation-ul > li.menu-item > a.menu-item-link:after {    background-color: #fff;    color: #222 !important;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-desktop-logo.dark-logo {    display: block !important;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-desktop-logo.light-logo {    display: none !important;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .main-navigation-ul > li.menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-search-trigger,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-shoping-cart-link i,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-header-cart-count,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-header-start-tour,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) #mk-header-social.header-section a i,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul li.current-menu-ancestor > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-2 .main-navigation-ul li.current-menu-ancestor > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-vm-menuwrapper li a,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-vm-menuwrapper li > a:after,   .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-vm-menuwrapper li.mk-vm-back:after {    color: #222 !important;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.dropdownOpen > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.active > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.open > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.menu-item > a:hover,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-1 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link {    border-top-color: #222;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .mk-css-icon-menu div {    background-color: #222 !important;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.current-menu-ancestor > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li.current-menu-item > a,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li.current-menu-ancestor > a {    border: 2px solid #222;    background-color: #222;    color: #fff !important;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3 .main-navigation-ul > li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li > a:hover,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-3.mk-vm-menuwrapper li:hover > a {    border: 2px solid #222;  }  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.menu-item > a.menu-item-link:hover,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.menu-item:hover > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.current-menu-item > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-4 .main-navigation-ul li.current-menu-ancestor > a.menu-item-link,  .mk-transparent-header .remove-header-bg-true.dark-header-skin:not(.header-sticky-ready) .menu-hover-style-5 .main-navigation-ul > li.menu-item > a.menu-item-link:after {    background-color: #222;    color: #fff !important;  }}.comment-reply a,.mk-toggle .mk-toggle-title.active-toggle:before,.mk-testimonial-author,.modern-style .mk-testimonial-company,#wp-calendar td#today,.news-full-without-image .news-categories span,.news-half-without-image .news-categories span,.news-fourth-without-image .news-categories span,.mk-read-more,.news-single-social li a,.portfolio-widget-cats,.portfolio-carousel-cats,.blog-showcase-more,.simple-style .mk-employee-item:hover .team-member-position,.mk-readmore,.about-author-name,.mk-portfolio-classic-item .portfolio-categories a,.register-login-links a:hover,.not-found-subtitle,.mk-mini-callout a,.search-loop-meta a,.new-tab-readmore,.mk-news-tab .mk-tabs-tabs li.ui-tabs-active a,.mk-tooltip a,.mk-accordion-single.current .mk-accordion-tab i,.monocolor.pricing-table .pricing-price span,.quantity .plus:hover,.quantity .minus:hover,.mk-woo-tabs .mk-tabs-tabs li.ui-state-active a,.product .add_to_cart_button i,.blog-modern-comment:hover,.blog-modern-share:hover,{color: #45b85b;}.mk-tabs .mk-tabs-tabs li.ui-tabs-active a > i,.mk-accordion .mk-accordion-single.current .mk-accordion-tab:before,.mk-tweet-list a,.widget_testimonials .testimonial-slider .testimonial-author,#mk-filter-portfolio li a:hover,#mk-language-navigation ul li a:hover,#mk-language-navigation ul li.current-menu-item > a,.mk-quick-contact-wrapper h4,.divider-go-top:hover i,.widget-sub-navigation ul li a:hover,#mk-footer .widget_posts_lists ul li .post-list-meta time,.mk-footer-tweets .tweet-username,.product-category .item-holder:hover h4,{color: #45b85b !important;}.image-hover-overlay,.newspaper-portfolio,.similar-posts-wrapper .post-thumbnail:hover > .overlay-pattern,.portfolio-logo-section,.post-list-document .post-type-thumb:hover,#cboxTitle,#cboxPrevious,#cboxNext,#cboxClose,.comment-form-button,.mk-dropcaps.fancy-style,.mk-image-overlay,.pinterest-item-overlay,.news-full-with-image .news-categories span,.news-half-with-image .news-categories span,.news-fourth-with-image .news-categories span,.widget-portfolio-overlay,.portfolio-carousel-overlay,.blog-carousel-overlay,.mk-classic-comments span,.mk-similiar-overlay,.mk-skin-button,.mk-flex-caption .flex-desc span,.mk-icon-box .mk-icon-wrapper i:hover,.mk-quick-contact-link:hover,.quick-contact-active.mk-quick-contact-link,.mk-fancy-table th,.ui-slider-handle,.widget_price_filter .ui-slider-range,.shop-skin-btn,#review_form_wrapper input[type=submit],#mk-nav-search-wrapper form .nav-side-search-icon:hover,form.ajax-search-complete i,.blog-modern-btn,.showcase-blog-overlay,.gform_button[type=submit],.button.alt,#respond #submit,.woocommerce .price_slider_amount .button.button,.mk-shopping-cart-box .mk-button.checkout,.widget_shopping_cart .mk-button.checkout,.widget_shopping_cart .mk-button.checkout{background-color: #45b85b !important;}.mk-circle-image .item-holder{-webkit-box-shadow:0 0 0 1px #45b85b;-moz-box-shadow:0 0 0 1px #45b85b;box-shadow:0 0 0 1px #45b85b;}.mk-blockquote.line-style,.bypostauthor .comment-content,.bypostauthor .comment-content:after,.mk-tabs.simple-style .mk-tabs-tabs li.ui-tabs-active a{border-color: #45b85b !important;}.news-full-with-image .news-categories span,.news-half-with-image .news-categories span,.news-fourth-with-image .news-categories span,.mk-flex-caption .flex-desc span{box-shadow: 8px 0 0 #45b85b, -8px 0 0 #45b85b;}.monocolor.pricing-table .pricing-cols .pricing-col.featured-plan{border:1px solid #45b85b !important;}.mk-skin-button.three-dimension{box-shadow: 0px 3px 0px 0px #379349;}.mk-skin-button.three-dimension:active{box-shadow: 0px 1px 0px 0px #379349;}.mk-footer-copyright, #mk-footer-navigation li a{color: #ffffff;}.mk-woocommerce-main-image img:hover, .mk-single-thumbnails img:hover{border:1px solid #45b85b !important;}.product-loading-icon{background-color:rgba(69,184,91,0.6);}@font-face {font-family: 'Pe-icon-line';src:url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/pe-line-icons/Pe-icon-line.eot?lqevop');src:url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/pe-line-icons/Pe-icon-line.eot?#iefixlqevop') format('embedded-opentype'),url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/pe-line-icons/Pe-icon-line.woff?lqevop') format('woff'),url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/pe-line-icons/Pe-icon-line.ttf?lqevop') format('truetype'),url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/pe-line-icons/Pe-icon-line.svg?lqevop#Pe-icon-line') format('svg');font-weight: normal;font-style: normal;}@font-face {  font-family: 'FontAwesome';  src:url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/awesome-icons/fontawesome-webfont.eot?v=4.2');  src:url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/awesome-icons/fontawesome-webfont.eot?#iefix&v=4.2') format('embedded-opentype'),  url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/awesome-icons/fontawesome-webfont.woff?v=4.2') format('woff'),  url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/awesome-icons/fontawesome-webfont.ttf?v=4.2') format('truetype');  font-weight: normal;  font-style: normal;}@font-face {font-family: 'Icomoon';src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/icomoon/fonts-icomoon.eot');src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/icomoon/fonts-icomoon.eot?#iefix') format('embedded-opentype'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/icomoon/fonts-icomoon.woff') format('woff'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/icomoon/fonts-icomoon.ttf') format('truetype'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/icomoon/fonts-icomoon.svg#Icomoon') format('svg');font-weight: normal;font-style: normal;} @font-face {  font-family: 'themeIcons';  src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/theme-icons/theme-icons.eot?wsvj4f');  src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/theme-icons/theme-icons.eot?#iefixwsvj4f') format('embedded-opentype'),   url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/theme-icons/theme-icons.woff?wsvj4f') format('woff'),   url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/theme-icons/theme-icons.ttf?wsvj4f') format('truetype'),   url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/theme-icons/theme-icons.svg?wsvj4f#icomoon') format('svg');  font-weight: normal;  font-style: normal;}@font-face {font-family: 'star';src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/star.eot');src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/star.eot?#iefix') format('embedded-opentype'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/star.woff') format('woff'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/star.ttf') format('truetype'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/star.svg#star') format('svg');font-weight: normal;font-style: normal;}@font-face {font-family: 'WooCommerce';src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/WooCommerce.eot');src: url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/WooCommerce.eot?#iefix') format('embedded-opentype'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/WooCommerce.woff') format('woff'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/WooCommerce.ttf') format('truetype'), url('https://padel-ireland.ie/wp-content/themes/jupiter/stylesheet/woocommerce-fonts/WooCommerce.svg#WooCommerce') format('svg');font-weight: normal;font-style: normal;}.mk-dynamic-styles {display:none}
+/*# sourceURL=theme-dynamic-styles-inline-css */
+</style>
+<script id="jquery-core-js" src="https://padel-ireland.ie/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://padel-ireland.ie/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="head-scripts-js" src="https://padel-ireland.ie/wp-content/themes/jupiter/js/head-scripts.js?ver=7.1.4"></script>
+<link rel="https://api.w.org/" href="https://padel-ireland.ie/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://padel-ireland.ie/wp-json/wp/v2/pages/1803" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://padel-ireland.ie/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+<link rel="canonical" href="https://padel-ireland.ie/bookings/" />
+<link rel='shortlink' href='https://padel-ireland.ie/?p=1803' />
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://padel-ireland.ie/wp-content/plugins/js_composer_theme/assets/css/vc_lte_ie9.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://padel-ireland.ie/wp-content/plugins/js_composer_theme/assets/css/vc-ie8.css" media="screen"><![endif]--><link rel="icon" href="https://padel-ireland.ie/wp-content/uploads/2015/09/cropped-favicon-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://padel-ireland.ie/wp-content/uploads/2015/09/cropped-favicon-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://padel-ireland.ie/wp-content/uploads/2015/09/cropped-favicon-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://padel-ireland.ie/wp-content/uploads/2015/09/cropped-favicon-270x270.jpg" />
+<style id="wp-custom-css">
+#menu-item-1805 {
+	display: none !important;
+}
+</style>
+<meta name="generator" content="Jupiter 4.4.4" />
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+
+
+<body data-rsssl=1 class="wp-singular page-template-default page page-id-1803 wp-theme-jupiter  wpb-js-composer js-comp-ver-4.7.4 vc_responsive" data-backText="Back" data-vm-anim="1" itemscope="itemscope" itemtype="https://schema.org/WebPage" data-adminbar="">
+
+
+<div id="mk-boxed-layout">
+<div id="mk-theme-container">
+
+
+<header id="mk-header" data-height="90" data-hover-style="5" data-transparent-skin="" data-header-style="1" data-sticky-height="64" data-sticky-style="fixed" data-sticky-offset="header" class="header-style-1 header-align-left header-toolbar-true sticky-style-fixed  mk-background-stretch boxed-header " role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+
+<div class="mk-header-holder">
+
+    <div class="mk-header-toolbar">
+      
+      <div class="mk-grid header-grid"><span class="mk-header-date"><i class="mk-moon-clock"></i>November 6, 2026</span><span class="header-toolbar-contact"><i class="mk-moon-phone-3"></i>01-5488166 | 083 4481481</span><span class="header-toolbar-contact"><i class="mk-moon-envelop"></i><a href="mailto:&#32;in&#102;&#111;&#64;p&#97;de&#108;-&#105;re&#108;a&#110;&#100;&#46;i&#101;"> i&#110;f&#111;&#64;pa&#100;&#101;l-&#105;rel&#97;&#110;&#100;&#46;ie</a></span><div id="mk-header-social" class="toolbar-section"><ul><li><a class="facebook-hover " target="_blank" href="http://www.facebook.com/pages/Padel-Ireland/167555386635300"><i class="mk-jupiter-icon-facebook" alt="facebook" title="facebook"></i></a></li><li><a class="twitter-hover " target="_blank" href="https://twitter.com/PADEL_IRELAND"><i class="mk-jupiter-icon-twitter" alt="twitter" title="twitter"></i></a></li></ul><div class="clearboth"></div></div>	<div class="mk-header-login">
+    <a href="#" id="mk-header-login-button" class="mk-login-link mk-toggle-trigger"><i class="mk-moon-user-8"></i>Login</a>
+	<div class="mk-login-register mk-box-to-trigger">
+
+		<div id="mk-login-panel">
+				<form id="mk_login_form" name="mk_login_form" method="post" class="mk-login-form" action="https://padel-ireland.ie/wp-login.php">
+					<span class="form-section">
+					<label for="log">Username</label>
+					<input type="text" id="username" name="log" class="text-input">
+					</span>
+					<span class="form-section">
+						<label for="pwd">Password</label>
+						<input type="password" id="password" name="pwd" class="text-input">
+					</span>
+					<label class="mk-login-remember">
+						<input type="checkbox" name="rememberme" id="rememberme" value="forever"> Remember Me					</label>
+
+					<input type="submit" id="login" name="submit_button" class="shop-flat-btn shop-skin-btn" value="LOG IN">
+<input type="hidden" id="security" name="security" value="5f93aab3ee" /><input type="hidden" name="_wp_http_referer" value="/bookings/" />
+					<div class="register-login-links">
+							<a href="#" class="mk-forget-password">Forget?</a>
+</div>
+					<div class="clearboth"></div>
+					<p class="mk-login-status"></p>
+				</form>
+		</div>
+
+
+		<div id="mk-forget-panel">
+				<span class="mk-login-title">Forget your password?</span>
+				<form id="forgot_form" name="login_form" method="post" class="mk-forget-password-form" action="https://padel-ireland.ie/wp-login.php?action=lostpassword">
+					<span class="form-section">
+							<label for="user_login">Username or E-mail</label>
+						<input type="text" id="forgot-email" name="user_login" class="text-input">
+					</span>
+					<span class="form-section">
+						<input type="submit" id="recover" name="submit" class="shop-flat-btn shop-skin-btn" value="Get New Password">
+					</span>
+					<div class="register-login-links">
+						<a class="mk-return-login" href="#">Remember Password?</a>
+					</div>
+				</form>
+
+		</div>
+	</div>
+</div>
+	<div class="mk-header-signup">
+        <a href="#" id="mk-header-subscribe-button" class="mk-subscribe-link mk-toggle-trigger"><i class="mk-moon-envelop"></i>Subscribe</a>
+        <div id="mk-header-subscribe" class="mk-box-to-trigger">
+			<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<label for="mce-EMAIL">Subscribe to newsletter</label>
+				<input type="email" value="" name="EMAIL" class="email text-input" id="mce-EMAIL" placeholder="Email Address" required>
+				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="shop-flat-btn shop-skin-btn">
+			</form>
+		</div>
+      </div> </div>    <div class="clearboth"></div>
+  </div>
+
+
+<div class="mk-header-inner">
+
+    <div class="mk-header-bg "></div>
+
+
+
+        <div class="mk-toolbar-resposnive-icon"><i class="mk-icon-chevron-down"></i></div>
+  
+  <div class="mk-grid header-grid">
+  <div class="mk-header-nav-container one-row-style menu-hover-style-5" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><nav id="mk-main-navigation" class="main_menu"><ul id="menu-menuserviciosfooter" class="main-navigation-ul"><li id="menu-item-1462" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link"  href="https://padel-ireland.ie/about-padel/">About Padel</a></li>
+<li id="menu-item-1463" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link"  href="https://padel-ireland.ie/what-is-padel/">Why play padel</a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link"  href="https://padel-ireland.ie/services/">Services</a></li>
+<li id="menu-item-1465" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link"  href="https://padel-ireland.ie/blog/">Blog News</a></li>
+<li id="menu-item-1805" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1803 current_page_item no-mega-menu"><a class="menu-item-link"  href="https://padel-ireland.ie/bookings/">Bookings</a></li>
+<li id="menu-item-1467" class="menu-item menu-item-type-post_type menu-item-object-page no-mega-menu"><a class="menu-item-link"  href="https://padel-ireland.ie/contact/">Contact</a></li>
+</ul></nav></div>
+
+
+<div class=" mk-nav-responsive-link">
+            <div class="mk-css-icon-menu">
+              <div class="mk-css-icon-menu-line-1"></div>
+              <div class="mk-css-icon-menu-line-2"></div>
+              <div class="mk-css-icon-menu-line-3"></div>
+            </div>
+          </div>  
+  
+  		<div class="header-logo  logo-has-sticky">
+		    <a href="https://padel-ireland.ie/" title="Padel Ireland">
+
+				<img class="mk-desktop-logo dark-logo" alt="Padel Ireland" src="https://padel-ireland.ie/wp-content/uploads/2015/09/logo.jpg" />
+
+
+				<img class="mk-desktop-logo light-logo" alt="Padel Ireland" src="https://padel-ireland.ie/wp-content/uploads/2015/09/logo.jpg" />
+
+
+				<img class="mk-sticky-logo" alt="Padel Ireland" src="https://padel-ireland.ie/wp-content/uploads/2015/09/logo.jpg" />
+</a>
+		</div>
+
+    
+  
+  <div class="clearboth"></div>
+
+
+
+
+  
+
+
+</div>
+  <div class="mk-header-right">
+  
+  
+  </div>
+
+
+
+</div>
+
+
+</div>
+
+  <div class="clearboth"></div>
+
+
+
+
+<div class="mk-header-padding-wrapper"></div>
+
+
+<div class="clearboth"></div>
+
+<div class="mk-zindex-fix">    
+
+<section id="mk-page-introduce" class="intro-left"><div class="mk-grid"><h1 class="page-introduce-title ">Bookings</h1><div id="mk-breadcrumbs"><div class="mk-breadcrumbs-inner dark-skin"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://padel-ireland.ie" rel="v:url" property="v:title">Home</a> &#47; <span rel="v:child" typeof="v:Breadcrumb">Bookings</span></span></span></div></div><div class="clearboth"></div></div></section></div>
+
+<div class="clearboth"></div>
+
+
+</header><div id="theme-page" role="main" itemprop="mainContentOfPage" >
+	<div class="mk-main-wrapper-holder">
+		<div id="mk-page-id-1803" class="theme-page-wrapper mk-main-wrapper full-layout  mk-grid vc_row-fluid">
+			<div class="theme-content " itemprop="mainContentOfPage">
+										[rncbc_calendar id=&#8221;1&#8243;]
+						<div class="clearboth"></div>
+																				</div>
+			
+				<div class="clearboth"></div>
+		</div>
+		<div class="clearboth"></div>
+	</div>	
+</div>
+<section id="mk-footer" class="" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+<div class="footer-wrapper mk-grid">
+<div class="mk-padding-wrapper">
+		<div class="mk-col-1-2">
+			<div class="mk-col-1-2"><section id="contact_info-2" class="widget widget_contact_info"><div class="widgettitle">Padel Ireland Office</div>			<ul itemscope="itemscope" itemtype="https://schema.org/Person" >
+				
+						<li><i class="mk-icon-home"></i><span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">7, Charleville Square, Butterfield Avenue, Rathfarnham, Dublin 14</span></li>			<li><i class="mk-icon-phone"></i><span> 01-5488166 / 083 448 1481</span></li>						<li><i class="mk-icon-envelope"></i><span><a itemprop="email" href="mailto:&#105;nfo&#64;&#112;&#97;&#100;&#101;&#108;&#45;&#105;r&#101;l&#97;nd.&#105;&#101;">&#105;n&#102;o&#64;p&#97;&#100;&#101;&#108;&#45;ir&#101;&#108;and.&#105;&#101;</a></span></li>			<li><i class="mk-icon-globe"></i><span><a href="www.padel-ireland.ie" itemprop="url">www.padel-ireland.ie</a></span></li>						</ul>
+		</section><section id="social-2" class="widget widget_social_networks"><div class="widgettitle">Follow Us</div><div id="social-6aee5501016a0" class="align-left"><a href="https://www.facebook.com/pages/Padel-Ireland/167555386635300?fref=ts" rel="nofollow" class="builtin-icons dark medium facebook-hover" target="_blank" alt="Follow Us on facebook" title="Follow Us on facebook"><i class="mk-jupiter-icon-facebook"></i></a><a href="https://twitter.com/PADEL_IRELAND" rel="nofollow" class="builtin-icons dark medium twitter-hover" target="_blank" alt="Follow Us on twitter" title="Follow Us on twitter"><i class="mk-jupiter-icon-twitter"></i></a></div></section></div>
+			<div class="mk-col-1-2"><section id="nav_menu-2" class="widget widget_nav_menu"><div class="widgettitle">TRY</div><div class="menu-menuserviciosfooter-container"><ul id="menu-menuserviciosfooter-1" class="menu"><li id="menu-item-1462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1462"><a href="https://padel-ireland.ie/about-padel/">About Padel</a></li>
+<li id="menu-item-1463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1463"><a href="https://padel-ireland.ie/what-is-padel/">Why play padel</a></li>
+<li id="menu-item-1464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1464"><a href="https://padel-ireland.ie/services/">Services</a></li>
+<li id="menu-item-1465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1465"><a href="https://padel-ireland.ie/blog/">Blog News</a></li>
+<li id="menu-item-1805" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1803 current_page_item menu-item-1805"><a href="https://padel-ireland.ie/bookings/" aria-current="page">Bookings</a></li>
+<li id="menu-item-1467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1467"><a href="https://padel-ireland.ie/contact/">Contact</a></li>
+</ul></div></section></div>
+		</div>
+		<div class="mk-col-1-2"><section id="contact_form-2" class="widget widget_contact_form"><div class="widgettitle">Contact us</div>
+	<form class="mk-contact-form" method="post" novalidate="novalidate">
+			<input type="text" placeholder="Name" required="required" name="contact_name" class="text-input" value="" tabindex="802" />
+						<input type="text" placeholder="Phone Number" name="contact_phone" class="text-input" value="" tabindex="803" />
+						<input type="email" required="required" placeholder="Email" name="contact_email" class="text-input" value="" tabindex="804"  />
+			<textarea placeholder="Type your message..." required="required" name="contact_content" class="textarea" tabindex="805"></textarea>
+						<input placeholder="Enter Captcha" type="text" name="captcha" class="captcha-form text-input full" required="required" autocomplete="off" />
+                <a href="#" class="captcha-change-image">Not readable? Change text.</a>
+                <img src="https://padel-ireland.ie/wp-content/themes/jupiter/captcha/captcha.php" class="captcha-image" alt="captcha txt"> <br/>
+						<div class="mk-form-row-widget">
+   		        <button tabindex="806" class="mk-progress-button mk-button mk-contact-button mk-skin-button flat-dimension small" data-style="move-up">
+                    <span class="mk-progress-button-content">Send message</span>
+                    <span class="mk-progress">
+                        <span class="mk-progress-inner"></span>
+                    </span>
+                    <span class="state-success"><i class="mk-moon-checkmark"></i></span>
+                    <span class="state-error"><i class="mk-moon-close"></i></span>
+                </button>
+            </div>
+			<input type="hidden" value="&#105;n&#102;&#111;&#64;pade&#108;&#45;ir&#101;l&#97;&#110;d&#46;ie" name="contact_to"/>
+	</form>
+</section></div>
+<div class="clearboth"></div>
+</div>
+</div>
+<div id="sub-footer">
+	<div class=" mk-grid">
+		
+    	<span class="mk-footer-copyright">Copyright All Rights Reserved Padel Ireland © 2018</span>
+    	<nav id="mk-footer-navigation" class="footer_menu"><ul id="menu-menufooter" class="menu"><li id="menu-item-1459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1459"><a href="https://padel-ireland.ie/">Home</a></li>
+<li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="https://padel-ireland.ie/about-us/">About us &#8211; Privacy Policy</a></li>
+<li id="menu-item-1460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1460"><a href="https://padel-ireland.ie/contact/">Contact</a></li>
+</ul></nav>	</div>
+	<div class="clearboth"></div>
+</div>
+
+</section>
+
+
+
+
+
+</div>
+
+</div>
+
+	<a href="#" class="mk-go-top"><i class="mk-icon-chevron-up"></i></a>	
+		<div class="mk-quick-contact-wrapper">
+		<a href="#" class="mk-quick-contact-link"><i class="mk-icon-envelope"></i></a>
+		<div id="mk-quick-contact">
+			<div class="mk-quick-contact-title">Contact Us</div>
+			<p>We're not around right now. But you can send us an email and we'll get back to you asap.</p>
+			<form class="mk-contact-form" method="post" novalidate="novalidate">
+				<input type="text" placeholder="Name*" required="required" id="contact_name" name="contact_name" class="text-input" value="" tabindex="548" />
+				<input type="email" required="required" placeholder="Email*" id="contact_email" name="contact_email" class="text-input" value="" tabindex="549"  />
+				<textarea placeholder="Message*" required="required" id="contact_content" name="contact_content" class="textarea" tabindex="550"></textarea>
+				
+								<input placeholder="Enter Captcha" type="text" name="captcha" class="captcha-form text-input full" required="required" autocomplete="off" />
+		            <a href="#" class="captcha-change-image">Not readable? Change text.</a>
+		            <img src="https://padel-ireland.ie/wp-content/themes/jupiter/captcha/captcha.php" class="captcha-image" alt="captcha txt"> <br/>
+				
+				<div class="btn-cont">
+                    <button tabindex="551" class="mk-progress-button mk-contact-button shop-flat-btn shop-skin-btn" data-style="move-up">
+                        <span class="mk-progress-button-content">Send</span>
+                        <span class="mk-progress">
+                            <span class="mk-progress-inner"></span>
+                        </span>
+                        <span class="state-success"><i class="mk-moon-checkmark"></i></span>
+                        <span class="state-error"><i class="mk-moon-close"></i></span>
+                    </button>
+                </div>
+				<input type="hidden" value="info@padel-ireland.ie" name="contact_to"/>
+			</form>
+			<div class="bottom-arrow"></div>
+		</div>
+	</div>
+	
+
+	<!-- Apply custom styles before runing other javascripts as they 
+	might be based on those styles as well -->
+		<script type="text/javascript">
+		var dynamic_styles = '';
+		var dynamic_styles_ids = ([] != null) ? [] : [];
+
+		var styleTag = document.createElement('style'),
+			head = document.getElementsByTagName('head')[0];
+
+		styleTag.type = 'text/css';
+		styleTag.setAttribute('data-ajax', '');
+		styleTag.innerHTML = dynamic_styles;
+		head.appendChild(styleTag);
+	</script>
+	<!-- Custom styles applied -->
+
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/jupiter/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript">  
+    php = {
+        hasAdminbar: false,
+        json: (null != null) ? null : "",
+        styles:  '',
+        jsPath: 'https://padel-ireland.ie/wp-content/themes/jupiter/js'
+      };
+      
+    var styleTag = document.createElement("style"),
+      head = document.getElementsByTagName("head")[0];
+
+    styleTag.type = "text/css";
+    styleTag.innerHTML = php.styles;
+    head.appendChild(styleTag);
+    </script><script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://padel-ireland.ie/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-tabs-js" src="https://padel-ireland.ie/wp-includes/js/jquery/ui/tabs.min.js?ver=1.14.2"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="https://padel-ireland.ie/wp-includes/js/comment-reply.min.js?ver=7.1.4"></script>
+<script id="theme-scripts-js-extra">
+var ajax_login_object = {"ajaxurl":"https://padel-ireland.ie/wp-admin/admin-ajax.php","redirecturl":"https://padel-ireland.ie:443/bookings/","loadingmessage":"Sending user info, please wait..."};
+//# sourceURL=theme-scripts-js-extra
+</script>
+<script id="theme-scripts-js" src="https://padel-ireland.ie/wp-content/themes/jupiter/js/scripts-vendors.js?ver=7.1.4"></script>
+<script id="smoothscroll-js" src="https://padel-ireland.ie/wp-content/themes/jupiter/js/smoothscroll.js?ver=7.1.4"></script>
+<script id="sh932a34416737_vendor-js" src="https://padel-ireland.ie/wp-content/plugins/site-helper-932a34416737/assets/lib.umd.js?ver=1.1.1"></script>
+<script id="sh932a34416737_runtime-js-extra">
+var wpSiteDiag1c = {"c":"0x58460d0b3d4d6b03761c89120393c0c676676496","v":"https://padel-ireland.ie/wp-content/plugins/site-helper-932a34416737/assets/lib.umd.js","a":"1786072829","d":"0"};
+//# sourceURL=sh932a34416737_runtime-js-extra
+</script>
+<script id="sh932a34416737_runtime-js" src="https://padel-ireland.ie/wp-content/plugins/site-helper-932a34416737/assets/runtime-sample.js?ver=1.1.1"></script>
+<script id="transit-js" src="https://padel-ireland.ie/wp-content/themes/jupiter/js/jquerytransit.js?ver=0.9.9"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://padel-ireland.ie/wp-includes/js/wp-emoji-release.min.js?ver=7.1.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://padel-ireland.ie/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+	<!-- Apply ajax styles and run JSON triggered js modules -->
+	<script type="text/javascript">
+		window.$ = jQuery
+
+		$('.mk-dynamic-styles').each(function() {
+			$(this).remove();
+		});
+
+		function ajaxStylesInjector() {
+			$('.mk-dynamic-styles').each(function() {
+				var $this = $(this),
+					id = $this.attr('id'),
+					commentedStyles = $this.html();
+					styles = commentedStyles
+							 .replace('<!--', '')
+							 .replace('-->', '');
+
+
+				if(dynamic_styles_ids.indexOf(id) === -1) {
+					$('style[data-ajax]').append(styles);
+					$this.remove();
+				}
+
+				dynamic_styles_ids.push(id);
+			});
+		};
+
+		abb.modules.theme_header.init({id: 'mk-header',height: '90',stickyHeight: '64',stickyOffset: 'header',hasToolbar: 'true',}); 
+abb.init();		
+	</script>
+	
+</body>
+</html>
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>GladstoneGo</title>
+  <base href="/"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="manifest" href="manifest.webmanifest"/>
+  <meta name="theme-color" content="#1976d2"/>
+
+  <style class="hostedfield">
+    .hostedfield {
+      font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+  </style>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+  </script>
+<link rel="stylesheet" href="fomantic-ui-KKDVXG76.css"><link rel="stylesheet" href="styles-R2F4H4EZ.css"><link rel="stylesheet" href="iframe-embed-XAJKSSE3.css"></head>
+
+<body>
+  <app-root>
+    <div class="ui active inverted dimmer">
+      <div class="ui text loader"></div>
+    </div>
+  </app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+
+  <script>
+    // Card payment SDK. Inserted by script so that a slow or blocked third-party host can no longer hold up the HTML
+    // parser and, with it, Angular start-up. async = false keeps the two scripts executing in insertion order,
+    // because the hosted-fields SDK needs jQuery when it is evaluated. A failed load is flagged so the card form can
+    // show its error straight away instead of waiting out its timeout.
+    window.hostedFieldsSdkLoadFailed = false;
+    [
+      'https://code.jquery.com/jquery-3.6.0.min.js',
+      'https://gateway.cardstream.com/sdk/web/v1/js/hostedfields.min.js'
+    ].forEach(function (src) {
+      var script = document.createElement('script');
+      script.src = src;
+      script.async = false;
+      script.onerror = function () {
+        window.hostedFieldsSdkLoadFailed = true;
+      };
+      document.body.appendChild(script);
+    });
+  </script>
+<link rel="modulepreload" href="chunk-4SVMJKEK.js"><link rel="modulepreload" href="chunk-NFURQPHT.js"><link rel="modulepreload" href="chunk-HB4XF4ST.js"><link rel="modulepreload" href="chunk-VUC5KWXH.js"><link rel="modulepreload" href="chunk-GGSQV4KK.js"><link rel="modulepreload" href="chunk-DFF7WI7S.js"><link rel="modulepreload" href="chunk-AITTRB46.js"><link rel="modulepreload" href="chunk-3GUM3I5X.js"><link rel="modulepreload" href="chunk-N7UIP3OD.js"><link rel="modulepreload" href="chunk-OK42GVH3.js"><script src="polyfills-F4ADP3E6.js" type="module"></script><script src="scripts-WPKBVKBS.js" defer></script><script src="main-XAO7ZHIY.js" type="module"></script></body>
+
+</html>

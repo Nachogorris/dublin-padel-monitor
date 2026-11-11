@@ -1,0 +1,78 @@
+﻿#
+# robots.txt.
+#
+# GENERAL.
+User-Agent: *
+Disallow: /Repositorio/
+Disallow: /Services/
+Disallow: /Intranet/
+Disallow: /css/
+Disallow: /Utils/
+Disallow: /ControlesUsuario/
+Disallow: /E_Commerce/
+Disallow: /Scripts/
+Disallow: /MasterPages/
+Disallow: /Campeonatos/
+Disallow: /Booking/
+Disallow: /ActBooking/
+Disallow: /Reservas/
+Disallow: /Courses/
+Disallow: /Matches/
+Disallow: /Partidas/
+Disallow: /ClassBooking/
+Disallow: /ActBooking/
+Disallow: /PoolBooking/
+Disallow: /ControlesUsuario/
+Disallow: /Utils/
+Disallow: /Ranking.aspx
+Disallow: /Error.aspx
+Disallow: /Login.aspx
+Disallow: /Perfil.aspx
+Disallow: /AutentificarUsuario.aspx
+Disallow: /BajaNewsletter.aspx
+Disallow: /BuscadorJugadores.aspx
+Disallow: /RecuperacionPassword.aspx
+Disallow: /PasswordRecovery.aspx
+Disallow: /PasswordRecover.aspx
+Disallow: /FormularioInscripcionOtraActividad.aspx
+Disallow: /tmpcache/
+#
+# Sitemap permitido, búsquedas no.
+#
+Sitemap: sitemap.ashx
+Disallow: /?s=
+Disallow: /search
+#
+# A partir de aquí es opcional pero recomendado.
+#
+# Lista de bots que suelen respetar el robots.txt pero rara
+# vez hacen un buen uso del sitio y abusan bastante…
+# Añadir al gusto del consumidor…
+User-agent: MSIECrawler
+Disallow: /
+User-agent: WebCopier
+Disallow: /
+User-agent: HTTrack
+Disallow: /
+User-agent: Microsoft.URL.Control
+Disallow: /
+User-agent: libwww
+Disallow: /
+#
+# Slurp (Yahoo!), Noxtrum y el bot de MSN a veces tienen
+# idas de pinza, toca decirles que reduzcan la marcha.
+# El valor es en segundos y podéis dejarlo bajo e ir
+# subiendo hasta el punto óptimo.
+#
+User-agent: noxtrumbot
+Disallow: /
+#User-agent: msnbot
+#Disallow: /
+User-agent: Slurp
+Crawl-delay: 50
+User-agent: twiceler.
+Crawl-delay: 50
+User-agent: twiceler
+Crawl-delay: 50
+User-Agent: Mozilla/5.0 (compatible; Yandex...)
+Disallow: /

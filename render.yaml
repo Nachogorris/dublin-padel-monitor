@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: dublin-padel-monitor
+    runtime: docker
+    plan: starter
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    disk:
+      name: padel-data
+      mountPath: /app/data
+      sizeGB: 1

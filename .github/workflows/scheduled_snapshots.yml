@@ -1,0 +1,46 @@
+name: Dublin Padel Scheduled 7-Day Snapshots
+
+on:
+  schedule:
+    # Horas UTC (Dublín está en UTC / GMT durante el invierno):
+    # 08:00, 12:30, 16:30, 20:00, 23:30
+    - cron: '0 8 * * *'
+    - cron: '30 12 * * *'
+    - cron: '30 16 * * *'
+    - cron: '0 20 * * *'
+    - cron: '30 23 * * *'
+  workflow_dispatch: # Botón manual en GitHub para lanzar la captura cuando tú quieras
+
+permissions:
+  contents: write
+
+jobs:
+  run-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python & Playwright Dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Execute Automated 7-Day Snapshot Wave
+        run: |
+          python -u monitor.py snapshot-wave --days 7
+
+      - name: Commit and Push Updated Database & Heatmaps
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/dublin_padel.db output/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): Automated 7-day snapshot pass [skip ci]" && git push)
